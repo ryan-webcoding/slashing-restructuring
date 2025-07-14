@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cm6kwvpp1kmjj"]
+
+[ext_resource type="PackedScene" uid="uid://deqho4kk4tewh" path="res://player/player.tscn" id="1_bs6sc"]
+
+[node name="game" type="Node"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1.06, 0, 0, 0, -4.63341e-08, 1.06, 0, -1.06, -4.63341e-08, 0, 2, 0)
+current = true
+
+[node name="player" parent="." instance=ExtResource("1_bs6sc")]
