@@ -1,0 +1,257 @@
+[gd_scene load_steps=91 format=3 uid="uid://bt8vj76nshe4"]
+
+[ext_resource type="Texture2D" uid="uid://c70mhi36fsxxd" path="res://img/enemy/black_assassian/running/up/01.png" id="1_yx04l"]
+[ext_resource type="Texture2D" uid="uid://ckupb0nwpwhow" path="res://img/enemy/black_assassian/running/up/02.png" id="2_7qph6"]
+[ext_resource type="Texture2D" uid="uid://dt3fno5kr4anu" path="res://img/enemy/black_assassian/running/up/03.png" id="3_rs4lu"]
+[ext_resource type="Texture2D" uid="uid://cx0xw37vlf0gy" path="res://img/enemy/black_assassian/running/up/04.png" id="4_hc5wt"]
+[ext_resource type="Texture2D" uid="uid://daam300wfxaqs" path="res://img/enemy/black_assassian/running/up/05.png" id="5_4ea0w"]
+[ext_resource type="Texture2D" uid="uid://cfmi1h6umasmw" path="res://img/enemy/black_assassian/running/up/06.png" id="6_j8c5n"]
+[ext_resource type="Texture2D" uid="uid://dtbgrj263syt4" path="res://img/enemy/black_assassian/running/up/07.png" id="7_ry7bf"]
+[ext_resource type="Texture2D" uid="uid://btddxa8huc4iq" path="res://img/enemy/black_assassian/running/left/01.png" id="8_vqoj3"]
+[ext_resource type="Texture2D" uid="uid://xkjbv6claevx" path="res://img/enemy/black_assassian/running/left/02.png" id="9_70mmr"]
+[ext_resource type="Texture2D" uid="uid://ctyhmnqa8yk3g" path="res://img/enemy/black_assassian/running/left/03.png" id="10_ksra1"]
+[ext_resource type="Texture2D" uid="uid://bmatk2agoumw8" path="res://img/enemy/black_assassian/running/left/04.png" id="11_pramk"]
+[ext_resource type="Texture2D" uid="uid://dur12tqi8cnu7" path="res://img/enemy/black_assassian/running/left/05.png" id="12_jyfri"]
+[ext_resource type="Texture2D" uid="uid://bs1qounrstpqe" path="res://img/enemy/black_assassian/running/left/06.png" id="13_fqciv"]
+[ext_resource type="Texture2D" uid="uid://s05qbcp2pdut" path="res://img/enemy/black_assassian/running/left/07.png" id="14_h3er5"]
+[ext_resource type="Texture2D" uid="uid://nv1r1cydu2a" path="res://img/enemy/black_assassian/running/right/01.png" id="15_nm8aj"]
+[ext_resource type="Texture2D" uid="uid://r74m05achm8m" path="res://img/enemy/black_assassian/running/right/02.png" id="16_25fc3"]
+[ext_resource type="Texture2D" uid="uid://0hd454f4ldc4" path="res://img/enemy/black_assassian/running/right/03.png" id="17_jwfns"]
+[ext_resource type="Texture2D" uid="uid://dd35jwfhl05gl" path="res://img/enemy/black_assassian/running/right/04.png" id="18_ysy0o"]
+[ext_resource type="Texture2D" uid="uid://2mu0kcb1afov" path="res://img/enemy/black_assassian/running/right/05.png" id="19_sd1fy"]
+[ext_resource type="Texture2D" uid="uid://bns3u7m6ourwl" path="res://img/enemy/black_assassian/running/right/06.png" id="20_m5vki"]
+[ext_resource type="Texture2D" uid="uid://euip5gxmioyn" path="res://img/enemy/black_assassian/running/right/07.png" id="21_ajrmk"]
+[ext_resource type="Texture2D" uid="uid://no7asgh6c04j" path="res://img/enemy/black_assassian/running/down/01.png" id="22_wuy67"]
+[ext_resource type="Texture2D" uid="uid://cqt8k55ukegmr" path="res://img/enemy/black_assassian/running/down/02.png" id="23_gvoh0"]
+[ext_resource type="Texture2D" uid="uid://c8t17d75magdd" path="res://img/enemy/black_assassian/running/down/03.png" id="24_wej8j"]
+[ext_resource type="Texture2D" uid="uid://42lilogwlhgo" path="res://img/enemy/black_assassian/running/down/04.png" id="25_pgly2"]
+[ext_resource type="Texture2D" uid="uid://n8bmm7hmi47a" path="res://img/enemy/black_assassian/running/down/05.png" id="26_f2587"]
+[ext_resource type="Texture2D" uid="uid://b4llfig8iwhlg" path="res://img/enemy/black_assassian/running/down/06.png" id="27_bqrv1"]
+[ext_resource type="Texture2D" uid="uid://k5t8pw7uaexo" path="res://img/enemy/black_assassian/running/down/07.png" id="28_plakf"]
+[ext_resource type="Texture2D" uid="uid://cnungwwa3qo2i" path="res://img/enemy/black_assassian/attack/up/01.png" id="29_jlrpg"]
+[ext_resource type="Texture2D" uid="uid://cbx0aqwc65r6n" path="res://img/enemy/black_assassian/attack/up/02.png" id="30_58mbk"]
+[ext_resource type="Texture2D" uid="uid://cnnlf4tu1gk0y" path="res://img/enemy/black_assassian/attack/up/03.png" id="31_nxd4i"]
+[ext_resource type="Texture2D" uid="uid://csmlu0aeehjkj" path="res://img/enemy/black_assassian/attack/up/04.png" id="32_ec731"]
+[ext_resource type="Texture2D" uid="uid://bnwx6rd18y0r6" path="res://img/enemy/black_assassian/attack/up/05.png" id="33_hpum3"]
+[ext_resource type="Texture2D" uid="uid://nsfh2pee2wse" path="res://img/enemy/black_assassian/attack/up/06.png" id="34_y748h"]
+[ext_resource type="Texture2D" uid="uid://i0eiry0nypke" path="res://img/enemy/black_assassian/attack/up/07.png" id="35_u6yts"]
+[ext_resource type="Texture2D" uid="uid://ci734abxm5hww" path="res://img/enemy/black_assassian/attack/up/08.png" id="36_5p1c1"]
+[ext_resource type="Texture2D" uid="uid://d1x8mnoydiwqx" path="res://img/enemy/black_assassian/attack/up/09.png" id="37_83535"]
+[ext_resource type="Texture2D" uid="uid://cb4hs1o3tgofm" path="res://img/enemy/black_assassian/attack/up/10.png" id="38_k0uxu"]
+[ext_resource type="Texture2D" uid="uid://b3d52ettv7nh7" path="res://img/enemy/black_assassian/attack/up/11.png" id="39_3djlc"]
+[ext_resource type="Texture2D" uid="uid://d3yro3m02u5jd" path="res://img/enemy/black_assassian/attack/up/12.png" id="40_vw8kn"]
+[ext_resource type="Texture2D" uid="uid://ddabay8rkkts0" path="res://img/enemy/black_assassian/attack/up/13.png" id="41_5wv0s"]
+[ext_resource type="Texture2D" uid="uid://cde2gbmsmye6b" path="res://img/enemy/black_assassian/attack/down/01.png" id="42_y4e6s"]
+[ext_resource type="Texture2D" uid="uid://bs7egmjthypoy" path="res://img/enemy/black_assassian/attack/down/02.png" id="43_cxa2y"]
+[ext_resource type="Texture2D" uid="uid://bl0hivigail5g" path="res://img/enemy/black_assassian/attack/down/03.png" id="44_65tyi"]
+[ext_resource type="Texture2D" uid="uid://da1gs6d6x1iep" path="res://img/enemy/black_assassian/attack/down/04.png" id="45_7egdr"]
+[ext_resource type="Texture2D" uid="uid://dm2als8m0xrb" path="res://img/enemy/black_assassian/attack/down/05.png" id="46_o4eu5"]
+[ext_resource type="Texture2D" uid="uid://ck6oaw6jchcju" path="res://img/enemy/black_assassian/attack/down/06.png" id="47_rfu74"]
+[ext_resource type="Texture2D" uid="uid://bcs4m4i8fiaqx" path="res://img/enemy/black_assassian/attack/down/07.png" id="48_nctko"]
+[ext_resource type="Texture2D" uid="uid://cmgh3y3hw01nr" path="res://img/enemy/black_assassian/attack/down/08.png" id="49_oimuc"]
+[ext_resource type="Texture2D" uid="uid://bovd4k5b2cpuc" path="res://img/enemy/black_assassian/attack/down/09.png" id="50_yjy44"]
+[ext_resource type="Texture2D" uid="uid://bbefqgrvic5ag" path="res://img/enemy/black_assassian/attack/down/10.png" id="51_kd1kl"]
+[ext_resource type="Texture2D" uid="uid://b8ab48fy4hed7" path="res://img/enemy/black_assassian/attack/down/11.png" id="52_kc0vh"]
+[ext_resource type="Texture2D" uid="uid://dpradtatl8m0p" path="res://img/enemy/black_assassian/attack/down/12.png" id="53_k1w14"]
+[ext_resource type="Texture2D" uid="uid://bjudhoqkh8dsa" path="res://img/enemy/black_assassian/attack/down/13.png" id="54_30hb2"]
+[ext_resource type="Texture2D" uid="uid://c5gv51ufewtsp" path="res://img/enemy/black_assassian/attack/left/01.png" id="55_n127r"]
+[ext_resource type="Texture2D" uid="uid://cujqnvfe4cei8" path="res://img/enemy/black_assassian/attack/left/02.png" id="56_fb5on"]
+[ext_resource type="Texture2D" uid="uid://w8n64ndvex3r" path="res://img/enemy/black_assassian/attack/left/03.png" id="57_7re2p"]
+[ext_resource type="Texture2D" uid="uid://cym31apdufvny" path="res://img/enemy/black_assassian/attack/left/04.png" id="58_hcj47"]
+[ext_resource type="Texture2D" uid="uid://d4b0cholvnswm" path="res://img/enemy/black_assassian/attack/left/05.png" id="59_1mwbq"]
+[ext_resource type="Texture2D" uid="uid://d13pll520savb" path="res://img/enemy/black_assassian/attack/left/06.png" id="60_amyyd"]
+[ext_resource type="Texture2D" uid="uid://dxifgit5gacmh" path="res://img/enemy/black_assassian/attack/left/07.png" id="61_gquc1"]
+[ext_resource type="Texture2D" uid="uid://7q8tfdcidncn" path="res://img/enemy/black_assassian/attack/left/08.png" id="62_sbdwn"]
+[ext_resource type="Texture2D" uid="uid://b2f1oy53ysdyv" path="res://img/enemy/black_assassian/attack/left/09.png" id="63_wjkoq"]
+[ext_resource type="Texture2D" uid="uid://c3dm5wkv3kx36" path="res://img/enemy/black_assassian/attack/left/10.png" id="64_03x1u"]
+[ext_resource type="Texture2D" uid="uid://bkepod08s774o" path="res://img/enemy/black_assassian/attack/left/11.png" id="65_uik6u"]
+[ext_resource type="Texture2D" uid="uid://pk0fwmffg6we" path="res://img/enemy/black_assassian/attack/left/12.png" id="66_tbyg0"]
+[ext_resource type="Texture2D" uid="uid://camlp6aq7ydb7" path="res://img/enemy/black_assassian/attack/left/13.png" id="67_kw6kk"]
+[ext_resource type="Texture2D" uid="uid://qkb8p6mtwc8s" path="res://img/enemy/black_assassian/attack/right/01.png" id="68_gl8k7"]
+[ext_resource type="Texture2D" uid="uid://bul6ln8ti5meq" path="res://img/enemy/black_assassian/attack/right/02.png" id="69_iusym"]
+[ext_resource type="Texture2D" uid="uid://ct12qw4prse1u" path="res://img/enemy/black_assassian/attack/right/03.png" id="70_5n0yw"]
+[ext_resource type="Texture2D" uid="uid://cf0aoxpsk04vn" path="res://img/enemy/black_assassian/attack/right/04.png" id="71_hu6lr"]
+[ext_resource type="Texture2D" uid="uid://dytb1yg0cqy88" path="res://img/enemy/black_assassian/attack/right/05.png" id="72_srcyq"]
+[ext_resource type="Texture2D" uid="uid://7eaybmmj5i63" path="res://img/enemy/black_assassian/attack/right/06.png" id="73_yjsu2"]
+[ext_resource type="Texture2D" uid="uid://c8dj2enwmqrft" path="res://img/enemy/black_assassian/attack/right/07.png" id="74_ukoh0"]
+[ext_resource type="Texture2D" uid="uid://dtfug4bjnajix" path="res://img/enemy/black_assassian/attack/right/08.png" id="75_rgeb8"]
+[ext_resource type="Texture2D" uid="uid://cfunqguk3p0wk" path="res://img/enemy/black_assassian/attack/right/09.png" id="76_u6mmc"]
+[ext_resource type="Texture2D" uid="uid://dvgtm2pt0pj2h" path="res://img/enemy/black_assassian/attack/right/10.png" id="77_h4vjj"]
+[ext_resource type="Texture2D" uid="uid://cthiuprweu85c" path="res://img/enemy/black_assassian/attack/right/11.png" id="78_gftli"]
+[ext_resource type="Texture2D" uid="uid://bu3s8uoc6t54k" path="res://img/enemy/black_assassian/attack/right/12.png" id="79_u41e2"]
+[ext_resource type="Texture2D" uid="uid://c1bvbuqxhk0qq" path="res://img/enemy/black_assassian/attack/right/13.png" id="80_aa20p"]
+
+[sub_resource type="Animation" id="Animation_48cyk"]
+resource_name = "run_up"
+length = 0.400003
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_yx04l"), ExtResource("2_7qph6"), ExtResource("3_rs4lu"), ExtResource("4_hc5wt"), ExtResource("5_4ea0w"), ExtResource("6_j8c5n"), ExtResource("7_ry7bf")]
+}
+
+[sub_resource type="Animation" id="Animation_se7ey"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_yx04l")]
+}
+
+[sub_resource type="Animation" id="Animation_iqp64"]
+resource_name = "run_left"
+length = 0.400003
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("8_vqoj3"), ExtResource("9_70mmr"), ExtResource("10_ksra1"), ExtResource("11_pramk"), ExtResource("12_jyfri"), ExtResource("13_fqciv"), ExtResource("14_h3er5")]
+}
+
+[sub_resource type="Animation" id="Animation_pd1jr"]
+resource_name = "run_right"
+length = 0.400003
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("15_nm8aj"), ExtResource("16_25fc3"), ExtResource("17_jwfns"), ExtResource("18_ysy0o"), ExtResource("19_sd1fy"), ExtResource("20_m5vki"), ExtResource("21_ajrmk")]
+}
+
+[sub_resource type="Animation" id="Animation_x7qn1"]
+resource_name = "run_down"
+length = 0.400003
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("22_wuy67"), ExtResource("23_gvoh0"), ExtResource("24_wej8j"), ExtResource("25_pgly2"), ExtResource("26_f2587"), ExtResource("27_bqrv1"), ExtResource("28_plakf")]
+}
+
+[sub_resource type="Animation" id="Animation_sft86"]
+resource_name = "attack_up"
+length = 0.800003
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("29_jlrpg"), ExtResource("30_58mbk"), ExtResource("31_nxd4i"), ExtResource("32_ec731"), ExtResource("33_hpum3"), ExtResource("34_y748h"), ExtResource("35_u6yts"), ExtResource("36_5p1c1"), ExtResource("37_83535"), ExtResource("38_k0uxu"), ExtResource("39_3djlc"), ExtResource("40_vw8kn"), ExtResource("41_5wv0s")]
+}
+
+[sub_resource type="Animation" id="Animation_nb12t"]
+resource_name = "attack_down"
+length = 0.800003
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("42_y4e6s"), ExtResource("43_cxa2y"), ExtResource("44_65tyi"), ExtResource("45_7egdr"), ExtResource("46_o4eu5"), ExtResource("47_rfu74"), ExtResource("48_nctko"), ExtResource("49_oimuc"), ExtResource("50_yjy44"), ExtResource("51_kd1kl"), ExtResource("52_kc0vh"), ExtResource("53_k1w14"), ExtResource("54_30hb2")]
+}
+
+[sub_resource type="Animation" id="Animation_kd7rx"]
+resource_name = "attack_left"
+length = 0.800003
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("55_n127r"), ExtResource("56_fb5on"), ExtResource("57_7re2p"), ExtResource("58_hcj47"), ExtResource("59_1mwbq"), ExtResource("60_amyyd"), ExtResource("61_gquc1"), ExtResource("62_sbdwn"), ExtResource("63_wjkoq"), ExtResource("64_03x1u"), ExtResource("65_uik6u"), ExtResource("66_tbyg0"), ExtResource("67_kw6kk")]
+}
+
+[sub_resource type="Animation" id="Animation_svapn"]
+resource_name = "attack_right"
+length = 0.800003
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("68_gl8k7"), ExtResource("69_iusym"), ExtResource("70_5n0yw"), ExtResource("71_hu6lr"), ExtResource("72_srcyq"), ExtResource("73_yjsu2"), ExtResource("74_ukoh0"), ExtResource("75_rgeb8"), ExtResource("76_u6mmc"), ExtResource("77_h4vjj"), ExtResource("78_gftli"), ExtResource("79_u41e2"), ExtResource("80_aa20p")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_upl7p"]
+_data = {
+&"RESET": SubResource("Animation_se7ey"),
+&"attack_down": SubResource("Animation_nb12t"),
+&"attack_left": SubResource("Animation_kd7rx"),
+&"attack_right": SubResource("Animation_svapn"),
+&"attack_up": SubResource("Animation_sft86"),
+&"run_down": SubResource("Animation_x7qn1"),
+&"run_left": SubResource("Animation_iqp64"),
+&"run_right": SubResource("Animation_pd1jr"),
+&"run_up": SubResource("Animation_48cyk")
+}
+
+[node name="black_assassian" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 1
+texture_filter = 0
+texture = ExtResource("1_yx04l")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_upl7p")
+}

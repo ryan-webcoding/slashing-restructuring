@@ -1,4 +1,4 @@
-[gd_scene load_steps=188 format=3 uid="uid://deqho4kk4tewh"]
+[gd_scene load_steps=171 format=3 uid="uid://deqho4kk4tewh"]
 
 [ext_resource type="Texture2D" uid="uid://0pd8x2mhae53" path="res://img/player/idle/up/back01.png" id="1_b8hi5"]
 [ext_resource type="Script" uid="uid://dsflxvdam8nsp" path="res://player/player.gd" id="1_vvji8"]
@@ -138,9 +138,8 @@
 [ext_resource type="Texture2D" uid="uid://dpuxb7ygfpm7u" path="res://img/player/running/upper_body/run_pos/right/upper_run_right07.png" id="135_pftwv"]
 [ext_resource type="Texture2D" uid="uid://c2x82tyhvch8q" path="res://img/player/running/upper_body/run_pos/right/upper_run_right08.png" id="136_bj0ii"]
 
-[sub_resource type="Animation" id="Animation_wybx0"]
-resource_name = "idle_up"
-loop_mode = 1
+[sub_resource type="Animation" id="Animation_p5tca"]
+length = 0.133337
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -148,10 +147,10 @@ tracks/0/path = NodePath("lower_body:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.0666667, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [ExtResource("1_b8hi5"), ExtResource("2_2uvqg"), ExtResource("3_1s1yo"), ExtResource("4_5ejfk"), ExtResource("5_jd2rm"), ExtResource("6_q28gw")]
+"values": [ExtResource("13_art4l"), ExtResource("14_fjxoa"), ExtResource("15_gswnw")]
 }
 
 [sub_resource type="Animation" id="Animation_6wior"]
@@ -168,21 +167,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [ExtResource("7_ge24q"), ExtResource("8_pnw6m"), ExtResource("9_1so5t"), ExtResource("10_55jnj"), ExtResource("11_dx5ib"), ExtResource("12_a2xo5")]
-}
-
-[sub_resource type="Animation" id="Animation_p5tca"]
-length = 0.133337
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("lower_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("13_art4l"), ExtResource("14_fjxoa"), ExtResource("15_gswnw")]
 }
 
 [sub_resource type="Animation" id="Animation_jbx34"]
@@ -217,22 +201,6 @@ tracks/0/keys = {
 "values": [ExtResource("22_w7j2h"), ExtResource("23_n0b8q"), ExtResource("24_jfgyi"), ExtResource("25_237xx"), ExtResource("26_wpyo2"), ExtResource("27_7crtr")]
 }
 
-[sub_resource type="Animation" id="Animation_35wys"]
-resource_name = "idle_slash_up"
-length = 0.133337
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("lower_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("13_art4l"), ExtResource("14_fjxoa"), ExtResource("15_gswnw")]
-}
-
 [sub_resource type="Animation" id="Animation_pjwc4"]
 resource_name = "idle_slash_down_var1"
 length = 0.133337
@@ -247,54 +215,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [ExtResource("28_vgvch"), ExtResource("29_a1u5o"), ExtResource("30_3dxkp")]
-}
-
-[sub_resource type="Animation" id="Animation_j55il"]
-resource_name = "idle_slash_left_var1"
-length = 0.133337
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("lower_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("31_1so5t"), ExtResource("32_55jnj"), ExtResource("33_dx5ib")]
-}
-
-[sub_resource type="Animation" id="Animation_hjies"]
-resource_name = "idle_slash_right_var1"
-length = 0.133337
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("lower_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("34_a2xo5"), ExtResource("35_art4l"), ExtResource("36_fjxoa")]
-}
-
-[sub_resource type="Animation" id="Animation_mmwog"]
-resource_name = "idle_slash_up_var2"
-length = 0.133337
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("lower_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("38_xcnuv"), ExtResource("37_gswnw"), ExtResource("40_qavcc")]
 }
 
 [sub_resource type="Animation" id="Animation_318aw"]
@@ -313,6 +233,22 @@ tracks/0/keys = {
 "values": [ExtResource("41_bd26m"), ExtResource("42_lufic"), ExtResource("43_nxclr")]
 }
 
+[sub_resource type="Animation" id="Animation_j55il"]
+resource_name = "idle_slash_left_var1"
+length = 0.133337
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("lower_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("31_1so5t"), ExtResource("32_55jnj"), ExtResource("33_dx5ib")]
+}
+
 [sub_resource type="Animation" id="Animation_kosww"]
 resource_name = "idle_slash_left_var2"
 length = 0.133337
@@ -327,6 +263,22 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [ExtResource("44_onxu2"), ExtResource("45_gci7n"), ExtResource("46_tcwf7")]
+}
+
+[sub_resource type="Animation" id="Animation_hjies"]
+resource_name = "idle_slash_right_var1"
+length = 0.133337
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("lower_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("34_a2xo5"), ExtResource("35_art4l"), ExtResource("36_fjxoa")]
 }
 
 [sub_resource type="Animation" id="Animation_s15n6"]
@@ -345,9 +297,40 @@ tracks/0/keys = {
 "values": [ExtResource("47_20bc7"), ExtResource("48_jfgxe"), ExtResource("49_yg0n1")]
 }
 
-[sub_resource type="Animation" id="Animation_es2j2"]
-resource_name = "run_up"
-length = 0.46667
+[sub_resource type="Animation" id="Animation_35wys"]
+resource_name = "idle_slash_up"
+length = 0.133337
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("lower_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("13_art4l"), ExtResource("14_fjxoa"), ExtResource("15_gswnw")]
+}
+
+[sub_resource type="Animation" id="Animation_mmwog"]
+resource_name = "idle_slash_up_var2"
+length = 0.133337
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("lower_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("38_xcnuv"), ExtResource("37_gswnw"), ExtResource("40_qavcc")]
+}
+
+[sub_resource type="Animation" id="Animation_wybx0"]
+resource_name = "idle_up"
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -356,10 +339,10 @@ tracks/0/path = NodePath("lower_body:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("50_qjt2w"), ExtResource("51_2lfai"), ExtResource("52_j3o0i"), ExtResource("53_pgo6y"), ExtResource("54_qm6yy"), ExtResource("55_gcmgo"), ExtResource("56_rnncm"), ExtResource("57_nj2w7")]
+"values": [ExtResource("1_b8hi5"), ExtResource("2_2uvqg"), ExtResource("3_1s1yo"), ExtResource("4_5ejfk"), ExtResource("5_jd2rm"), ExtResource("6_q28gw")]
 }
 
 [sub_resource type="Animation" id="Animation_dbpvf"]
@@ -413,6 +396,23 @@ tracks/0/keys = {
 "values": [ExtResource("73_6ws1b"), ExtResource("74_ua2f6"), ExtResource("75_mikk3"), ExtResource("76_glkag"), ExtResource("77_pgwk2"), ExtResource("78_k8h4n"), ExtResource("79_qvxeb"), ExtResource("80_487ub")]
 }
 
+[sub_resource type="Animation" id="Animation_es2j2"]
+resource_name = "run_up"
+length = 0.46667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("lower_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("50_qjt2w"), ExtResource("51_2lfai"), ExtResource("52_j3o0i"), ExtResource("53_pgo6y"), ExtResource("54_qm6yy"), ExtResource("55_gcmgo"), ExtResource("56_rnncm"), ExtResource("57_nj2w7")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5kvr3"]
 _data = {
 &"RESET": SubResource("Animation_p5tca"),
@@ -434,22 +434,6 @@ _data = {
 &"run_up": SubResource("Animation_es2j2")
 }
 
-[sub_resource type="Animation" id="Animation_r1xsk"]
-resource_name = "run_slash_up_var1"
-length = 0.133337
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("upper_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("81_v3gkr"), ExtResource("82_ebdw7"), ExtResource("83_cc7t5")]
-}
-
 [sub_resource type="Animation" id="Animation_7a3sx"]
 length = 0.001
 tracks/0/type = "value"
@@ -463,135 +447,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [ExtResource("81_v3gkr")]
-}
-
-[sub_resource type="Animation" id="Animation_5uett"]
-resource_name = "run_slash_down_var1"
-length = 0.133337
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("upper_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("84_mteo0"), ExtResource("85_b3dbx"), ExtResource("86_a11nk")]
-}
-
-[sub_resource type="Animation" id="Animation_is2u5"]
-resource_name = "run_slash_left_var1"
-length = 0.133337
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("upper_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("87_lmpt2"), ExtResource("88_5je6m"), ExtResource("89_hoe0r")]
-}
-
-[sub_resource type="Animation" id="Animation_c5yx4"]
-resource_name = "run_slash_right_var1"
-length = 0.133337
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("upper_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("90_f0v3p"), ExtResource("91_bes41"), ExtResource("92_o4h5w")]
-}
-
-[sub_resource type="Animation" id="Animation_5g5lj"]
-resource_name = "run_slash_up_var2"
-length = 0.133337
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("upper_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("93_8ix03"), ExtResource("94_jkjge"), ExtResource("95_o1mcp")]
-}
-
-[sub_resource type="Animation" id="Animation_e43gw"]
-resource_name = "run_slash_down_var2"
-length = 0.133337
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("upper_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("96_b853o"), ExtResource("97_ml76h"), ExtResource("98_frvh1")]
-}
-
-[sub_resource type="Animation" id="Animation_kfspb"]
-resource_name = "run_slash_left_var2"
-length = 0.133337
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("upper_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("99_t50x1"), ExtResource("100_poeh4"), ExtResource("101_ciuuh")]
-}
-
-[sub_resource type="Animation" id="Animation_wveng"]
-resource_name = "run_slash_right_var2"
-length = 0.133337
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("upper_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("102_0y8qi"), ExtResource("103_4e4er"), ExtResource("104_7pq27")]
-}
-
-[sub_resource type="Animation" id="Animation_iiowf"]
-resource_name = "run_up"
-length = 0.46667
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("upper_body:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("16_kcq4v"), ExtResource("58_iojyt"), ExtResource("59_vhicv"), ExtResource("60_hrakr"), ExtResource("61_wsa1w"), ExtResource("62_2s0vo"), ExtResource("63_hgm8h"), ExtResource("64_ig2t1")]
 }
 
 [sub_resource type="Animation" id="Animation_sxh3c"]
@@ -645,6 +500,151 @@ tracks/0/keys = {
 "values": [ExtResource("129_lv6rk"), ExtResource("130_r7062"), ExtResource("131_5t6i6"), ExtResource("132_3kkj3"), ExtResource("133_6rjp2"), ExtResource("134_1fa30"), ExtResource("135_pftwv"), ExtResource("136_bj0ii")]
 }
 
+[sub_resource type="Animation" id="Animation_5uett"]
+resource_name = "run_slash_down_var1"
+length = 0.133337
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("upper_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("84_mteo0"), ExtResource("85_b3dbx"), ExtResource("86_a11nk")]
+}
+
+[sub_resource type="Animation" id="Animation_e43gw"]
+resource_name = "run_slash_down_var2"
+length = 0.133337
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("upper_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("96_b853o"), ExtResource("97_ml76h"), ExtResource("98_frvh1")]
+}
+
+[sub_resource type="Animation" id="Animation_is2u5"]
+resource_name = "run_slash_left_var1"
+length = 0.133337
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("upper_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("87_lmpt2"), ExtResource("88_5je6m"), ExtResource("89_hoe0r")]
+}
+
+[sub_resource type="Animation" id="Animation_kfspb"]
+resource_name = "run_slash_left_var2"
+length = 0.133337
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("upper_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("99_t50x1"), ExtResource("100_poeh4"), ExtResource("101_ciuuh")]
+}
+
+[sub_resource type="Animation" id="Animation_c5yx4"]
+resource_name = "run_slash_right_var1"
+length = 0.133337
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("upper_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("90_f0v3p"), ExtResource("91_bes41"), ExtResource("92_o4h5w")]
+}
+
+[sub_resource type="Animation" id="Animation_wveng"]
+resource_name = "run_slash_right_var2"
+length = 0.133337
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("upper_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("102_0y8qi"), ExtResource("103_4e4er"), ExtResource("104_7pq27")]
+}
+
+[sub_resource type="Animation" id="Animation_r1xsk"]
+resource_name = "run_slash_up_var1"
+length = 0.133337
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("upper_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("81_v3gkr"), ExtResource("82_ebdw7"), ExtResource("83_cc7t5")]
+}
+
+[sub_resource type="Animation" id="Animation_5g5lj"]
+resource_name = "run_slash_up_var2"
+length = 0.133337
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("upper_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("93_8ix03"), ExtResource("94_jkjge"), ExtResource("95_o1mcp")]
+}
+
+[sub_resource type="Animation" id="Animation_iiowf"]
+resource_name = "run_up"
+length = 0.46667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("upper_body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("16_kcq4v"), ExtResource("58_iojyt"), ExtResource("59_vhicv"), ExtResource("60_hrakr"), ExtResource("61_wsa1w"), ExtResource("62_2s0vo"), ExtResource("63_hgm8h"), ExtResource("64_ig2t1")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mrho2"]
 _data = {
 &"RESET": SubResource("Animation_7a3sx"),
@@ -666,84 +666,6 @@ _data = {
 radius = 0.181754
 height = 0.691313
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_vvji8"]
-animation = &"idle_up"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xgxvu"]
-animation = &"idle_right"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_pdnyr"]
-animation = &"idle_down"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_26ehw"]
-animation = &"idle_left"
-
-[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_4vegf"]
-blend_point_0/node = SubResource("AnimationNodeAnimation_vvji8")
-blend_point_0/pos = Vector2(0, -0.9)
-blend_point_1/node = SubResource("AnimationNodeAnimation_xgxvu")
-blend_point_1/pos = Vector2(1, 0)
-blend_point_2/node = SubResource("AnimationNodeAnimation_pdnyr")
-blend_point_2/pos = Vector2(0, 0.9)
-blend_point_3/node = SubResource("AnimationNodeAnimation_26ehw")
-blend_point_3/pos = Vector2(-1, 0)
-blend_mode = 2
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_v3gkr"]
-animation = &"run_up"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ebdw7"]
-animation = &"run_right"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cc7t5"]
-animation = &"run_down"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mteo0"]
-animation = &"run_left"
-
-[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_b3dbx"]
-blend_point_0/node = SubResource("AnimationNodeAnimation_v3gkr")
-blend_point_0/pos = Vector2(0, -0.9)
-blend_point_1/node = SubResource("AnimationNodeAnimation_ebdw7")
-blend_point_1/pos = Vector2(1, 0)
-blend_point_2/node = SubResource("AnimationNodeAnimation_cc7t5")
-blend_point_2/pos = Vector2(0, 0.9)
-blend_point_3/node = SubResource("AnimationNodeAnimation_mteo0")
-blend_point_3/pos = Vector2(-1, 0)
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_a11nk"]
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_lmpt2"]
-advance_mode = 2
-advance_condition = &"is_running"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_hoe0r"]
-advance_mode = 2
-advance_condition = &"is_idle"
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_8ix03"]
-states/End/position = Vector2(681.5, 99.3273)
-states/Start/position = Vector2(205, 99.4395)
-states/idle/node = SubResource("AnimationNodeBlendSpace2D_4vegf")
-states/idle/position = Vector2(377.04, 98.2062)
-states/running/node = SubResource("AnimationNodeBlendSpace2D_b3dbx")
-states/running/position = Vector2(539.58, 99.2713)
-transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_a11nk"), "idle", "running", SubResource("AnimationNodeStateMachineTransition_lmpt2"), "running", "idle", SubResource("AnimationNodeStateMachineTransition_hoe0r")]
-graph_offset = Vector2(54.3597, 9.6599)
-
-[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_vvji8"]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_xgxvu"]
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_vvji8"]
-states/End/position = Vector2(704, 100.094)
-states/running/node = SubResource("AnimationNodeBlendSpace2D_vvji8")
-states/running/position = Vector2(471.008, 100.188)
-transitions = ["Start", "running", SubResource("AnimationNodeStateMachineTransition_xgxvu")]
-graph_offset = Vector2(126.825, 19.3125)
-
 [node name="player" type="CharacterBody3D"]
 script = ExtResource("1_vvji8")
 
@@ -759,24 +681,14 @@ libraries = {
 
 [node name="lower_body" type="Sprite3D" parent="."]
 billboard = 1
+texture_filter = 0
 texture = ExtResource("13_art4l")
 
 [node name="upper_body" type="Sprite3D" parent="."]
 billboard = 1
+texture_filter = 0
 texture = ExtResource("81_v3gkr")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.09)
 shape = SubResource("CapsuleShape3D_37kv6")
-
-[node name="animation_lower_tree" type="AnimationTree" parent="."]
-tree_root = SubResource("AnimationNodeStateMachine_8ix03")
-anim_player = NodePath("../animation_lower")
-parameters/conditions/is_idle = false
-parameters/conditions/is_running = false
-parameters/idle/blend_position = Vector2(-0.00730819, 0.915179)
-parameters/running/blend_position = 0
-
-[node name="animation_upper_tree" type="AnimationTree" parent="."]
-tree_root = SubResource("AnimationNodeStateMachine_vvji8")
-anim_player = NodePath("../animation_upper")
-parameters/running/blend_position = Vector2(0, 0)

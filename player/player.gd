@@ -1,86 +1,109 @@
 extends CharacterBody3D
 
-@onready var anim_tree = $animation_lower_tree
-@onready var state_machine = anim_tree["parameters/playback"]
-@onready var anim_player = $animation_lower
+@onready var anim_lower = $animation_lower
+@onready var anim_upper = $animation_upper
+@onready var upper_body = $upper_body
 
 const SPEED = 4.0
 var last_input_vector := Vector2(0, 1)
-var current_slash := ""
 var is_slashing := false
 
 func _ready():
-	anim_tree.active = true
-	anim_tree.set("parameters/conditions/is_idle", true)
-	anim_tree.set("parameters/conditions/is_running", false)
-	anim_tree.set("parameters/conditions/is_slashing1", false)
-	anim_tree.set("parameters/conditions/is_slashing2", false)
+	anim_lower.play("idle_down")
+	anim_upper.stop()
+	upper_body.hide()
 
 func _physics_process(delta):
-	var input_vector = Vector2(
-		Input.get_action_strength("run_right") - Input.get_action_strength("run_left"),
-		Input.get_action_strength("run_down") - Input.get_action_strength("run_up")
-	)
+	var input_vector := Input.get_vector("run_left", "run_right", "run_up", "run_down")
+
+	if is_slashing:
+		move_and_slide()
+		return
 
 	if input_vector != Vector2.ZERO:
-		input_vector = input_vector.normalized()
 		last_input_vector = input_vector
+		velocity.x = input_vector.x * SPEED
+		velocity.z = input_vector.y * SPEED
+		move_and_slide()
 
-		var direction = Vector3(input_vector.x, 0, input_vector.y)
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
+		if not upper_body.visible:
+			upper_body.show()
 
-		# Only allow movement transitions if not slashing
-		if !is_slashing:
-			anim_tree.set("parameters/conditions/is_running", true)
-			anim_tree.set("parameters/conditions/is_idle", false)
+		play_run_animation(input_vector)
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+		move_and_slide()
 
-		if !is_slashing:
-			anim_tree.set("parameters/conditions/is_running", false)
-			anim_tree.set("parameters/conditions/is_idle", true)
+		if upper_body.visible:
+			upper_body.hide()
 
-	# Update blend positions
-	anim_tree.set("parameters/idle/blend_position", last_input_vector)
-	anim_tree.set("parameters/running/blend_position", last_input_vector)
-	anim_tree.set("parameters/idle_slash1/blend_position", last_input_vector)
-	anim_tree.set("parameters/idle_slash2/blend_position", last_input_vector)
+		play_idle_animation(last_input_vector)
 
-	move_and_slide()
+	if Input.is_action_just_pressed("slash") and not is_slashing:
+		start_slash()
 
-# 🔥 Slash input
-func _input(event):
-	if event.is_action_pressed("slash") and !is_slashing and velocity.length() == 0:
-		is_slashing = true
-		anim_tree.active = false  # Temporarily stop tree to prevent conflict
+# ---- Slash Logic ----
 
-		# Pick slash anim
-		var suffix = "_var1" if randi() % 2 == 0 else "_var2"
-		var dir = last_input_vector
-		var slash_anim := ""
+func start_slash() -> void:
+	is_slashing = true
+	var dir_name = get_direction_name(last_input_vector)
+	var variation = randi() % 2 + 1
 
-		if abs(dir.x) > abs(dir.y):
-			slash_anim = "idle_slash_right%s" % suffix if dir.x > 0 else "idle_slash_left%s" % suffix
-		else:
-			slash_anim = "idle_slash_down%s" % suffix if dir.y > 0 else "idle_slash_up%s" % suffix
-
-		current_slash = slash_anim
-		anim_player.play(current_slash)
-
-
-func _process(delta):
-	if is_slashing and !anim_player.is_playing():
-		is_slashing = false
-		current_slash = ""
-		anim_tree.active = true  # Reactivate tree when done
-
-
-func get_current_slash_anim_name(slash_node: String) -> String:
-	var suffix = "_1" if slash_node == "idle_slash1" else "_2"
-	var dir = last_input_vector
-	if abs(dir.x) > abs(dir.y):
-		return "slash_right%s" % suffix if dir.x > 0 else "slash_left%s" % suffix
+	if velocity.length() > 0.1:
+		# Running → play run_slash in animation_upper
+		var anim_name = "run_slash_%s_var%d" % [dir_name, variation]
+		anim_upper.play(anim_name)
+		if anim_upper.is_connected("animation_finished", Callable(self, "_on_slash_finished")):
+			anim_upper.disconnect("animation_finished", Callable(self, "_on_slash_finished"))
+		anim_upper.connect("animation_finished", Callable(self, "_on_slash_finished"))
 	else:
-		return "slash_down%s" % suffix if dir.y > 0 else "slash_up%s" % suffix
+		# Idle → play idle_slash in animation_lower
+		var anim_name = "idle_slash_%s_var%d" % [dir_name, variation]
+		anim_lower.play(anim_name)
+		if anim_lower.is_connected("animation_finished", Callable(self, "_on_slash_finished")):
+			anim_lower.disconnect("animation_finished", Callable(self, "_on_slash_finished"))
+		anim_lower.connect("animation_finished", Callable(self, "_on_slash_finished"))
+
+func _on_slash_finished(anim_name: StringName) -> void:
+	is_slashing = false
+
+	if anim_upper.is_connected("animation_finished", Callable(self, "_on_slash_finished")):
+		anim_upper.disconnect("animation_finished", Callable(self, "_on_slash_finished"))
+	if anim_lower.is_connected("animation_finished", Callable(self, "_on_slash_finished")):
+		anim_lower.disconnect("animation_finished", Callable(self, "_on_slash_finished"))
+
+	if velocity.length() > 0.1:
+		play_run_animation(last_input_vector)
+	else:
+		play_idle_animation(last_input_vector)
+
+# ---- Animation Helpers ----
+
+func play_run_animation(dir: Vector2) -> void:
+	var anim_name = get_run_anim_name(dir)
+	if anim_lower.current_animation != anim_name:
+		anim_lower.play(anim_name)
+	if anim_upper.current_animation != anim_name:
+		anim_upper.play(anim_name)
+
+func play_idle_animation(dir: Vector2) -> void:
+	var anim_name = get_idle_anim_name(dir)
+	if anim_lower.current_animation != anim_name:
+		anim_lower.play(anim_name)
+	if anim_upper.is_playing():
+		anim_upper.stop()
+
+# ---- Direction Name Builders ----
+
+func get_run_anim_name(dir: Vector2) -> String:
+	return "run_" + get_direction_name(dir)
+
+func get_idle_anim_name(dir: Vector2) -> String:
+	return "idle_" + get_direction_name(dir)
+
+func get_direction_name(dir: Vector2) -> String:
+	if abs(dir.x) > abs(dir.y):
+		return "right" if dir.x > 0 else "left"
+	else:
+		return "down" if dir.y > 0 else "up"
