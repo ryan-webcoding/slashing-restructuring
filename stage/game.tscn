@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cm6kwvpp1kmjj"]
+[gd_scene load_steps=6 format=3 uid="uid://cm6kwvpp1kmjj"]
 
 [ext_resource type="PackedScene" uid="uid://deqho4kk4tewh" path="res://player/player.tscn" id="1_bs6sc"]
 [ext_resource type="Script" uid="uid://ci3ucd2a1xjuj" path="res://stage/camera_3d.gd" id="1_mvy1x"]
 [ext_resource type="PackedScene" uid="uid://chnkaci74f8" path="res://environment_scene/cage.tscn" id="2_mvy1x"]
 [ext_resource type="Texture2D" uid="uid://bwx1amps7la1q" path="res://img/environment/floor/floor.png" id="4_2ux4g"]
+[ext_resource type="PackedScene" uid="uid://bt8vj76nshe4" path="res://enemy/black_assassian/black_assassian.tscn" id="4_rwxxk"]
 
 [node name="game" type="Node"]
 
@@ -18,6 +19,10 @@ height = 5.0
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 4.09377)
 
 [node name="player" parent="." instance=ExtResource("1_bs6sc")]
+
+[node name="black_assassian" parent="." instance=ExtResource("4_rwxxk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.96795, 0.1, 0)
+player_path = NodePath("../player")
 
 [node name="floor" type="Sprite3D" parent="."]
 transform = Transform3D(3, 0, 0, 0, -1.31134e-07, -3, 0, 3, -1.31134e-07, 0, -0.1, 0)

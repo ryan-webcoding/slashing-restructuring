@@ -664,7 +664,7 @@ _data = {
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_37kv6"]
 radius = 0.181754
-height = 0.691313
+height = 0.719452
 
 [node name="player" type="CharacterBody3D"]
 script = ExtResource("1_vvji8")
@@ -690,5 +690,5 @@ texture_filter = 0
 texture = ExtResource("81_v3gkr")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.09)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.0522506)
 shape = SubResource("CapsuleShape3D_37kv6")

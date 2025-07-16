@@ -4,7 +4,7 @@ extends CharacterBody3D
 @onready var anim_upper = $animation_upper
 @onready var upper_body = $upper_body
 
-const SPEED = 4.0
+const SPEED = 5.0
 var last_input_vector := Vector2(0, 1)
 var is_slashing := false
 
