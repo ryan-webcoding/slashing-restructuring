@@ -21,7 +21,7 @@ transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 4.09377)
 [node name="player" parent="." instance=ExtResource("1_bs6sc")]
 
 [node name="black_assassian" parent="." instance=ExtResource("4_rwxxk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.96795, 0.1, 0)
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -2.96795, 0.1, 0)
 player_path = NodePath("../player")
 
 [node name="floor" type="Sprite3D" parent="."]

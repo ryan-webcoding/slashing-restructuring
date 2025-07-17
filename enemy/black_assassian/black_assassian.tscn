@@ -1,4 +1,4 @@
-[gd_scene load_steps=97 format=3 uid="uid://bt8vj76nshe4"]
+[gd_scene load_steps=165 format=3 uid="uid://bt8vj76nshe4"]
 
 [ext_resource type="Script" uid="uid://cmbydokymn6bb" path="res://enemy/black_assassian/black_assassian.gd" id="1_7qph6"]
 [ext_resource type="Texture2D" uid="uid://c70mhi36fsxxd" path="res://img/enemy/black_assassian/running/up/01.png" id="1_yx04l"]
@@ -81,10 +81,74 @@
 [ext_resource type="Texture2D" uid="uid://bkptgh8b2gxqy" path="res://img/enemy/black_assassian/attack/up/11.png" id="52_kd1kl"]
 [ext_resource type="Texture2D" uid="uid://cnnupm3ix7jhg" path="res://img/enemy/black_assassian/attack/up/12.png" id="53_kc0vh"]
 [ext_resource type="Texture2D" uid="uid://0elfdo7sye7e" path="res://img/enemy/black_assassian/attack/up/13.png" id="54_k1w14"]
+[ext_resource type="Texture2D" uid="uid://8a8xcrhtwg2l" path="res://img/enemy/black_assassian/death/up/01.png" id="82_tbyg0"]
+[ext_resource type="Texture2D" uid="uid://bjpdfpfa4wp0d" path="res://img/enemy/black_assassian/death/up/02.png" id="83_kw6kk"]
+[ext_resource type="Texture2D" uid="uid://t8d6yeftbrpf" path="res://img/enemy/black_assassian/death/up/03.png" id="84_gl8k7"]
+[ext_resource type="Texture2D" uid="uid://1yrlh2iphfdo" path="res://img/enemy/black_assassian/death/up/04.png" id="85_iusym"]
+[ext_resource type="Texture2D" uid="uid://devq16ilrm8rm" path="res://img/enemy/black_assassian/death/up/05.png" id="86_5n0yw"]
+[ext_resource type="Texture2D" uid="uid://drk2e3h7p0os7" path="res://img/enemy/black_assassian/death/up/06.png" id="87_hu6lr"]
+[ext_resource type="Texture2D" uid="uid://dst2w3koc1uu7" path="res://img/enemy/black_assassian/death/up/07.png" id="88_srcyq"]
+[ext_resource type="Texture2D" uid="uid://ec24f6ytw7mh" path="res://img/enemy/black_assassian/death/up/08.png" id="89_yjsu2"]
+[ext_resource type="Texture2D" uid="uid://b56whag2r5x0n" path="res://img/enemy/black_assassian/death/up/09.png" id="90_ukoh0"]
+[ext_resource type="Texture2D" uid="uid://0cvhl6uru4or" path="res://img/enemy/black_assassian/death/up/10.png" id="91_rgeb8"]
+[ext_resource type="Texture2D" uid="uid://cbm7urbnu8nye" path="res://img/enemy/black_assassian/death/up/11.png" id="92_u6mmc"]
+[ext_resource type="Texture2D" uid="uid://djbmxc6s7vsbg" path="res://img/enemy/black_assassian/death/up/12.png" id="93_h4vjj"]
+[ext_resource type="Texture2D" uid="uid://cj4y6d5ykm8st" path="res://img/enemy/black_assassian/death/up/13.png" id="94_gftli"]
+[ext_resource type="Texture2D" uid="uid://djatfhn0c88t8" path="res://img/enemy/black_assassian/death/up/14.png" id="95_u41e2"]
+[ext_resource type="Texture2D" uid="uid://cahga2o3j157t" path="res://img/enemy/black_assassian/death/up/15.png" id="96_aa20p"]
+[ext_resource type="Texture2D" uid="uid://ib3qw51irhtc" path="res://img/enemy/black_assassian/death/up/16.png" id="97_qcjan"]
+[ext_resource type="Texture2D" uid="uid://c1d2jka3duhcv" path="res://img/enemy/black_assassian/death/down/01.png" id="98_osw0i"]
+[ext_resource type="Texture2D" uid="uid://b4v8calcc2u3f" path="res://img/enemy/black_assassian/death/down/02.png" id="99_q08xv"]
+[ext_resource type="Texture2D" uid="uid://o8mv6s5qfvs2" path="res://img/enemy/black_assassian/death/down/03.png" id="100_7d6km"]
+[ext_resource type="Texture2D" uid="uid://cytjcr131ging" path="res://img/enemy/black_assassian/death/down/04.png" id="101_k4iqs"]
+[ext_resource type="Texture2D" uid="uid://dooceggq0uo42" path="res://img/enemy/black_assassian/death/down/05.png" id="102_x3ddv"]
+[ext_resource type="Texture2D" uid="uid://bx22jln4yw5nc" path="res://img/enemy/black_assassian/death/down/06.png" id="103_gfqpl"]
+[ext_resource type="Texture2D" uid="uid://m4vqsqj2y7u6" path="res://img/enemy/black_assassian/death/down/07.png" id="104_lqh7m"]
+[ext_resource type="Texture2D" uid="uid://b6p34fxsyk4pr" path="res://img/enemy/black_assassian/death/down/08.png" id="105_sw6sa"]
+[ext_resource type="Texture2D" uid="uid://ghd7uk1yctj2" path="res://img/enemy/black_assassian/death/down/09.png" id="106_4ecf0"]
+[ext_resource type="Texture2D" uid="uid://sl8fjb7ypnv4" path="res://img/enemy/black_assassian/death/down/10.png" id="107_mqlim"]
+[ext_resource type="Texture2D" uid="uid://d2rhnxdtbsefg" path="res://img/enemy/black_assassian/death/down/11.png" id="108_570ak"]
+[ext_resource type="Texture2D" uid="uid://qvlj7wywpkcv" path="res://img/enemy/black_assassian/death/down/12.png" id="109_0qgjl"]
+[ext_resource type="Texture2D" uid="uid://b2yfqrx5w6840" path="res://img/enemy/black_assassian/death/down/13.png" id="110_fwc6w"]
+[ext_resource type="Texture2D" uid="uid://xwxq3voy3blg" path="res://img/enemy/black_assassian/death/down/14.png" id="111_u0mh7"]
+[ext_resource type="Texture2D" uid="uid://c5ymusgg2003g" path="res://img/enemy/black_assassian/death/down/15.png" id="112_khlhe"]
+[ext_resource type="Texture2D" uid="uid://d38hsqefj7k63" path="res://img/enemy/black_assassian/death/down/16.png" id="113_gdqu8"]
+[ext_resource type="Texture2D" uid="uid://1gjyuwo014tk" path="res://img/enemy/black_assassian/death/left/01.png" id="114_anc64"]
+[ext_resource type="Texture2D" uid="uid://dism1dl2eni7w" path="res://img/enemy/black_assassian/death/left/02.png" id="115_jkm7a"]
+[ext_resource type="Texture2D" uid="uid://dfghwjt5jue3m" path="res://img/enemy/black_assassian/death/left/03.png" id="116_6kpr8"]
+[ext_resource type="Texture2D" uid="uid://b5c6v67n5ltfc" path="res://img/enemy/black_assassian/death/left/04.png" id="117_46bxm"]
+[ext_resource type="Texture2D" uid="uid://c3034ktg1xxk3" path="res://img/enemy/black_assassian/death/left/05.png" id="118_umr33"]
+[ext_resource type="Texture2D" uid="uid://bakwupq8wuhw0" path="res://img/enemy/black_assassian/death/left/06.png" id="119_d3kt7"]
+[ext_resource type="Texture2D" uid="uid://dmxnksnik7hay" path="res://img/enemy/black_assassian/death/left/07.png" id="120_h8nlr"]
+[ext_resource type="Texture2D" uid="uid://dh61658gesk6r" path="res://img/enemy/black_assassian/death/left/08.png" id="121_3wmpc"]
+[ext_resource type="Texture2D" uid="uid://b0v4fg0vgw5l5" path="res://img/enemy/black_assassian/death/left/09.png" id="122_wsffy"]
+[ext_resource type="Texture2D" uid="uid://co5tgvndvvu0c" path="res://img/enemy/black_assassian/death/left/10.png" id="123_2fs4g"]
+[ext_resource type="Texture2D" uid="uid://pb3eoob4ocsy" path="res://img/enemy/black_assassian/death/left/11.png" id="124_dgu45"]
+[ext_resource type="Texture2D" uid="uid://bg3jgavfhd0qx" path="res://img/enemy/black_assassian/death/left/12.png" id="125_uv41f"]
+[ext_resource type="Texture2D" uid="uid://olujtrplywqa" path="res://img/enemy/black_assassian/death/left/13.png" id="126_cuopc"]
+[ext_resource type="Texture2D" uid="uid://c6mvt4xoyh3pw" path="res://img/enemy/black_assassian/death/left/14.png" id="127_v5x61"]
+[ext_resource type="Texture2D" uid="uid://lbqjvorwyua0" path="res://img/enemy/black_assassian/death/left/15.png" id="128_fndi6"]
+[ext_resource type="Texture2D" uid="uid://ckutimr2jalj" path="res://img/enemy/black_assassian/death/left/16.png" id="129_ujq81"]
+[ext_resource type="Texture2D" uid="uid://b8f7ur8v2w7m6" path="res://img/enemy/black_assassian/death/right/01.png" id="130_yfatx"]
+[ext_resource type="Texture2D" uid="uid://cml8u2rxmqa8p" path="res://img/enemy/black_assassian/death/right/02.png" id="131_2nv2w"]
+[ext_resource type="Texture2D" uid="uid://bf0fiacwvb4jn" path="res://img/enemy/black_assassian/death/right/03.png" id="132_fyblg"]
+[ext_resource type="Texture2D" uid="uid://caa2prtibo0da" path="res://img/enemy/black_assassian/death/right/04.png" id="133_hmpn0"]
+[ext_resource type="Texture2D" uid="uid://bvn8dcdkmabn3" path="res://img/enemy/black_assassian/death/right/05.png" id="134_bbhoh"]
+[ext_resource type="Texture2D" uid="uid://cikoj523epowy" path="res://img/enemy/black_assassian/death/right/06.png" id="135_82i1b"]
+[ext_resource type="Texture2D" uid="uid://c7t7jwn2hbgro" path="res://img/enemy/black_assassian/death/right/07.png" id="136_wrwpm"]
+[ext_resource type="Texture2D" uid="uid://cbxs8mh1xod6n" path="res://img/enemy/black_assassian/death/right/08.png" id="137_y2xnx"]
+[ext_resource type="Texture2D" uid="uid://cqn6m2ibhtso4" path="res://img/enemy/black_assassian/death/right/09.png" id="138_ac1fu"]
+[ext_resource type="Texture2D" uid="uid://cclrdkxinolbf" path="res://img/enemy/black_assassian/death/right/10.png" id="139_ie3p7"]
+[ext_resource type="Texture2D" uid="uid://dc2j6i3qpuqaa" path="res://img/enemy/black_assassian/death/right/11.png" id="140_833s3"]
+[ext_resource type="Texture2D" uid="uid://bcbmiwywa3nym" path="res://img/enemy/black_assassian/death/right/12.png" id="141_g0u6i"]
+[ext_resource type="Texture2D" uid="uid://bqeyl6bphchuh" path="res://img/enemy/black_assassian/death/right/13.png" id="142_11fkk"]
+[ext_resource type="Texture2D" uid="uid://0j5xfncccmjj" path="res://img/enemy/black_assassian/death/right/14.png" id="143_yto8c"]
+[ext_resource type="Texture2D" uid="uid://d1nqmpqjot0h6" path="res://img/enemy/black_assassian/death/right/15.png" id="144_8y8yk"]
+[ext_resource type="Texture2D" uid="uid://ff5ru35iyp4u" path="res://img/enemy/black_assassian/death/right/16.png" id="145_xdkas"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gst4t"]
 radius = 0.200043
-height = 0.512034
+height = 0.696496
 
 [sub_resource type="Animation" id="Animation_se7ey"]
 length = 0.001
@@ -289,6 +353,66 @@ tracks/0/keys = {
 "values": [ExtResource("1_yx04l"), ExtResource("2_7qph6"), ExtResource("3_rs4lu"), ExtResource("4_hc5wt"), ExtResource("5_4ea0w"), ExtResource("6_j8c5n"), ExtResource("7_ry7bf")]
 }
 
+[sub_resource type="Animation" id="Animation_gya86"]
+resource_name = "death_up_1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8, 0.866667, 0.933333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("82_tbyg0"), ExtResource("83_kw6kk"), ExtResource("84_gl8k7"), ExtResource("85_iusym"), ExtResource("86_5n0yw"), ExtResource("87_hu6lr"), ExtResource("88_srcyq"), ExtResource("89_yjsu2"), ExtResource("90_ukoh0"), ExtResource("91_rgeb8"), ExtResource("92_u6mmc"), ExtResource("93_h4vjj"), ExtResource("94_gftli"), ExtResource("95_u41e2"), ExtResource("96_aa20p"), ExtResource("97_qcjan")]
+}
+
+[sub_resource type="Animation" id="Animation_8kndv"]
+resource_name = "death_down_1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8, 0.866667, 0.933333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("98_osw0i"), ExtResource("99_q08xv"), ExtResource("100_7d6km"), ExtResource("101_k4iqs"), ExtResource("102_x3ddv"), ExtResource("103_gfqpl"), ExtResource("104_lqh7m"), ExtResource("105_sw6sa"), ExtResource("106_4ecf0"), ExtResource("107_mqlim"), ExtResource("108_570ak"), ExtResource("109_0qgjl"), ExtResource("110_fwc6w"), ExtResource("111_u0mh7"), ExtResource("112_khlhe"), ExtResource("113_gdqu8")]
+}
+
+[sub_resource type="Animation" id="Animation_jtkx8"]
+resource_name = "death_left_1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8, 0.866667, 0.933333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("114_anc64"), ExtResource("115_jkm7a"), ExtResource("116_6kpr8"), ExtResource("117_46bxm"), ExtResource("118_umr33"), ExtResource("119_d3kt7"), ExtResource("120_h8nlr"), ExtResource("121_3wmpc"), ExtResource("122_wsffy"), ExtResource("123_2fs4g"), ExtResource("124_dgu45"), ExtResource("125_uv41f"), ExtResource("126_cuopc"), ExtResource("127_v5x61"), ExtResource("128_fndi6"), ExtResource("129_ujq81")]
+}
+
+[sub_resource type="Animation" id="Animation_vtoi0"]
+resource_name = "death_right_1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8, 0.866667, 0.933333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("130_yfatx"), ExtResource("131_2nv2w"), ExtResource("132_fyblg"), ExtResource("133_hmpn0"), ExtResource("134_bbhoh"), ExtResource("135_82i1b"), ExtResource("136_wrwpm"), ExtResource("137_y2xnx"), ExtResource("138_ac1fu"), ExtResource("139_ie3p7"), ExtResource("140_833s3"), ExtResource("141_g0u6i"), ExtResource("142_11fkk"), ExtResource("143_yto8c"), ExtResource("144_8y8yk"), ExtResource("145_xdkas")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_upl7p"]
 _data = {
 &"RESET": SubResource("Animation_se7ey"),
@@ -296,6 +420,10 @@ _data = {
 &"attack_left": SubResource("Animation_kd7rx"),
 &"attack_right": SubResource("Animation_svapn"),
 &"attack_up": SubResource("Animation_sft86"),
+&"death_down_1": SubResource("Animation_8kndv"),
+&"death_left_1": SubResource("Animation_jtkx8"),
+&"death_right_1": SubResource("Animation_vtoi0"),
+&"death_up_1": SubResource("Animation_gya86"),
 &"run_down": SubResource("Animation_x7qn1"),
 &"run_left": SubResource("Animation_iqp64"),
 &"run_right": SubResource("Animation_pd1jr"),
@@ -303,24 +431,24 @@ _data = {
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7qph6"]
-size = Vector3(0.486877, 0.188919, 1)
+size = Vector3(0.5, 0.4, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rs4lu"]
-size = Vector3(0.474304, 0.270996, 1)
+size = Vector3(0.5, 0.4, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hc5wt"]
-size = Vector3(0.185303, 0.629333, 1)
+size = Vector3(0.36, 0.7, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4ea0w"]
-size = Vector3(0.159828, 0.627686, 1)
+size = Vector3(0.36, 0.7, 1)
 
 [node name="black_assassian" type="CharacterBody3D"]
-transform = Transform3D(2, 0, 0, 0, -8.74228e-08, 2, 0, -2, -8.74228e-08, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
 script = ExtResource("1_7qph6")
 speed = 5.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0935419, -4.08885e-09)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.021435, -9.36956e-10)
 shape = SubResource("CapsuleShape3D_gst4t")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
@@ -336,23 +464,23 @@ libraries = {
 [node name="hit_area_up" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hit_area_up"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00405884, 0.195168, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000961197, 0.261468, -2.75835e-09)
 shape = SubResource("BoxShape3D_7qph6")
 
 [node name="hit_area_down" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hit_area_down"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00247192, -0.250732, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00247192, -0.296092, -1.52554e-10)
 shape = SubResource("BoxShape3D_rs4lu")
 
 [node name="hit_area_left" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hit_area_left"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.131226, -0.0540466, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.220503, -0.0224554, 1.64283e-09)
 shape = SubResource("BoxShape3D_hc5wt")
 
 [node name="hit_area_right" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hit_area_right"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.171299, -0.0565186, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.245413, -0.024232, 2.29651e-09)
 shape = SubResource("BoxShape3D_4ea0w")

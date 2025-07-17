@@ -36,7 +36,7 @@ func _physics_process(delta):
 	velocity = direction * speed
 	move_and_slide()
 
-	if global_transform.origin.distance_to(player.global_transform.origin) < 0.5:
+	if global_transform.origin.distance_to(player.global_transform.origin) < 0.8:
 		_start_attack()
 		return
 
@@ -71,9 +71,8 @@ func _start_attack():
 # Called by AnimationPlayer on attack frame
 func deal_damage():
 	var area_to_check: Area3D = hit_areas.get(last_direction)
-
 	if area_to_check:
 		for body in area_to_check.get_overlapping_bodies():
-			if body == player:
-				print("you dead")
-				break
+			if body.has_method("take_damage"):
+				body.take_damage()
+				

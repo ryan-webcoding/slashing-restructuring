@@ -14,6 +14,12 @@ func _ready():
 	upper_body.hide()
 
 func _physics_process(delta):
+	if is_dead:
+		# Stop movement, skip all animation updates
+		velocity = Vector3.ZERO
+		move_and_slide()
+		return
+
 	var input_vector := Input.get_vector("run_left", "run_right", "run_up", "run_down")
 
 	if is_slashing:
@@ -42,6 +48,7 @@ func _physics_process(delta):
 
 	if Input.is_action_just_pressed("slash") and not is_slashing:
 		start_slash()
+
 
 # ---- Slash Logic ----
 
@@ -107,3 +114,27 @@ func get_direction_name(dir: Vector2) -> String:
 		return "right" if dir.x > 0 else "left"
 	else:
 		return "down" if dir.y > 0 else "up"
+		
+		
+		
+# ---- death animation handler----
+
+var is_dead := false
+
+func take_damage():
+	if is_dead:
+		return
+	is_dead = true
+
+	var dir_name = get_direction_name(last_input_vector)
+	var death_anim = "stab_death_" + dir_name
+
+	if anim_lower.has_animation(death_anim):
+		anim_lower.play(death_anim)
+	else:
+		print("Missing death animation:", death_anim)
+
+	# Stop upper animation if any
+	if anim_upper.is_playing():
+		anim_upper.stop()
+	upper_body.hide()
