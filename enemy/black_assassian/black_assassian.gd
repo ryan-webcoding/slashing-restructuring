@@ -7,12 +7,23 @@ extends CharacterBody3D
 @onready var anim_player: AnimationPlayer = $AnimationPlayer
 @onready var main_collision: CollisionShape3D = $CollisionShape3D
 
+# Directional hit areas
+@onready var hit_areas := {
+	"up": $hit_area_up,
+	"down": $hit_area_down,
+	"left": $hit_area_left,
+	"right": $hit_area_right
+}
+
 var last_horizontal := true
 var last_direction := "left"
 var is_attacking := false
 
 func _ready():
-	pass  # No signal needed anymore
+	# Make sure hit areas are monitoring
+	for area in hit_areas.values():
+		area.monitoring = true
+		area.monitorable = true
 
 func _physics_process(delta):
 	if player == null or not is_instance_valid(player) or is_attacking:
@@ -34,17 +45,10 @@ func _physics_process(delta):
 
 	if abs(x) > abs(z):
 		last_horizontal = true
-		if x > 0.0:
-			last_direction = "right"
-		else:
-			last_direction = "left"
+		last_direction = "right" if x > 0.0 else "left"
 	else:
 		last_horizontal = false
-		if z > 0.0:
-			last_direction = "down"
-		else:
-			last_direction = "up"
-
+		last_direction = "down" if z > 0.0 else "up"
 
 	var anim = "run_" + last_direction
 	if anim_player.current_animation != anim:
@@ -64,9 +68,12 @@ func _start_attack():
 
 	is_attacking = false
 
-# 👇 This method is called *only* at the attack frame
+# Called by AnimationPlayer on attack frame
 func deal_damage():
-	if player != null and is_instance_valid(player):
-		var dist = global_transform.origin.distance_to(player.global_transform.origin)
-		if dist < 1.5:
-			print("you dead")
+	var area_to_check: Area3D = hit_areas.get(last_direction)
+
+	if area_to_check:
+		for body in area_to_check.get_overlapping_bodies():
+			if body == player:
+				print("you dead")
+				break
