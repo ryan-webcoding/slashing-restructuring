@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://x04qhky5bqyw"
-path.s3tc="res://.godot/imported/left_slash01.png-1385288f7e4afc4d643dbc0a98b4c4bb.s3tc.ctex"
+uid="uid://wi2ri2gyhqj5"
+path.s3tc="res://.godot/imported/left01.png-538960d4fa0bd6c0d14c86c1c9e3d0aa.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://img/player/idle_slash/var1/left/left_slash01.png"
-dest_files=["res://.godot/imported/left_slash01.png-1385288f7e4afc4d643dbc0a98b4c4bb.s3tc.ctex"]
+source_file="res://img/player/idle_slash/var1/left/left01.png"
+dest_files=["res://.godot/imported/left01.png-538960d4fa0bd6c0d14c86c1c9e3d0aa.s3tc.ctex"]
 
 [params]
 

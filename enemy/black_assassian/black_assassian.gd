@@ -37,7 +37,7 @@ func _physics_process(delta):
 	velocity = direction * speed
 	move_and_slide()
 
-	if global_transform.origin.distance_to(player.global_transform.origin) < 0.8:
+	if global_transform.origin.distance_to(player.global_transform.origin) < 0.75:
 		_start_attack()
 		return
 

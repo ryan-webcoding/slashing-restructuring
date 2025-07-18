@@ -3,34 +3,33 @@
 [ext_resource type="PackedScene" uid="uid://bnyst5rgjxsdh" path="res://3dmodel/cage.glb" id="1_o4bg7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o4bg7"]
-size = Vector3(4.14356, 1, 0.453339)
+size = Vector3(1.89087, 1, 0.312622)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5oj0k"]
-size = Vector3(0.422363, 1, 2.26025)
+size = Vector3(1.89648, 1, 0.214111)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_k87xa"]
-size = Vector3(0.437805, 1, 2.20654)
+size = Vector3(0.186462, 1, 1.26245)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rxjin"]
-size = Vector3(4.17847, 1, 0.989685)
+size = Vector3(0.189331, 1, 1.26294)
 
 [node name="cage" instance=ExtResource("1_o4bg7")]
-transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 0.999363, 0.0356844, 0, -0.0356844, 0.999363, -0.0267754, 0, 0.273331)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00256348, 0, 0.0352173)
 shape = SubResource("BoxShape3D_o4bg7")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.85313, 0, -0.630127)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00292969, 0, -0.966187)
 shape = SubResource("BoxShape3D_5oj0k")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" index="2"]
-transform = Transform3D(0.999642, 0.0267702, 0, -0.0267702, 0.999642, 0, 0, 0, 1, -1.89893, 0, -0.603271)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.934235, 0, -0.440552)
 shape = SubResource("BoxShape3D_k87xa")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D" index="3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0360107, 0, -1.89629)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.940125, 0, -0.441284)
 shape = SubResource("BoxShape3D_rxjin")

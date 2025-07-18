@@ -14,6 +14,11 @@ config/name="slashing_restructure"
 run/main_scene="uid://cm6kwvpp1kmjj"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
 [input]
 
 run_up={
