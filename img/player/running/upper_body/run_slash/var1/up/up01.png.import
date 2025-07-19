@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwkxd6ykxqbo3"
-path.s3tc="res://.godot/imported/run_slash_up03.png-6025f3ab9cc81cd9ff0a59d53cd67621.s3tc.ctex"
+uid="uid://daf47gdty3qyv"
+path.s3tc="res://.godot/imported/up01.png-b4b9751218c4bdda81a10f96e9fd622d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://img/player/running/upper_body/run_slash/var2/up/run_slash_up03.png"
-dest_files=["res://.godot/imported/run_slash_up03.png-6025f3ab9cc81cd9ff0a59d53cd67621.s3tc.ctex"]
+source_file="res://img/player/running/upper_body/run_slash/var1/up/up01.png"
+dest_files=["res://.godot/imported/up01.png-b4b9751218c4bdda81a10f96e9fd622d.s3tc.ctex"]
 
 [params]
 
