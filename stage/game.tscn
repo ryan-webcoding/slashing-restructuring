@@ -12,7 +12,7 @@
 transform = Transform3D(1.06, 0, 0, 0, -4.63341e-08, 1.06, 0, -1.06, -4.63341e-08, 0, 10, 0)
 projection = 1
 current = true
-size = 10.0
+size = 3.0
 near = 0.001
 far = 100.0
 script = ExtResource("1_mvy1x")

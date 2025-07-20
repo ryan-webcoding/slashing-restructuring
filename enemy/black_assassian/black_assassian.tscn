@@ -13,11 +13,11 @@
 [ext_resource type="Texture2D" uid="uid://b3k0gibisvo2y" path="res://img/enemy/black_assassian/running/up/06.png" id="6_j8c5n"]
 [ext_resource type="Texture2D" uid="uid://d2w1ab3y2mrhs" path="res://img/enemy/black_assassian/attack/down/05.png" id="7_j8c5n"]
 [ext_resource type="Texture2D" uid="uid://b3oaonal68tn" path="res://img/enemy/black_assassian/running/up/07.png" id="7_ry7bf"]
-[ext_resource type="Texture2D" uid="uid://dg4atboe5ud1e" path="res://img/enemy/black_assassian/attack/down/06.png" id="8_ry7bf"]
+[ext_resource type="Texture2D" uid="uid://drn8e02dltjrj" path="res://img/enemy/black_assassian/attack/down/06.png" id="8_ry7bf"]
 [ext_resource type="Texture2D" uid="uid://bynhqiypjw8ty" path="res://img/enemy/black_assassian/running/left/01.png" id="8_vqoj3"]
 [ext_resource type="Texture2D" uid="uid://d21b8by56x7ys" path="res://img/enemy/black_assassian/running/left/02.png" id="9_70mmr"]
-[ext_resource type="Texture2D" uid="uid://b3no8i7h661nr" path="res://img/enemy/black_assassian/attack/down/07.png" id="9_vqoj3"]
-[ext_resource type="Texture2D" uid="uid://bnf004qqpf3yf" path="res://img/enemy/black_assassian/attack/down/08.png" id="10_70mmr"]
+[ext_resource type="Texture2D" uid="uid://f2eam5lfb25u" path="res://img/enemy/black_assassian/attack/down/07.png" id="9_vqoj3"]
+[ext_resource type="Texture2D" uid="uid://dsdf4g63pcll5" path="res://img/enemy/black_assassian/attack/down/08.png" id="10_70mmr"]
 [ext_resource type="Texture2D" uid="uid://own2yi233whr" path="res://img/enemy/black_assassian/running/left/03.png" id="10_ksra1"]
 [ext_resource type="Texture2D" uid="uid://c8prb7axpyoeq" path="res://img/enemy/black_assassian/attack/down/09.png" id="11_ksra1"]
 [ext_resource type="Texture2D" uid="uid://dvd520dgdwico" path="res://img/enemy/black_assassian/running/left/04.png" id="11_pramk"]
@@ -40,11 +40,11 @@
 [ext_resource type="Texture2D" uid="uid://cit25aq54oorj" path="res://img/enemy/black_assassian/running/right/06.png" id="20_m5vki"]
 [ext_resource type="Texture2D" uid="uid://dt1cx2t0yg3q1" path="res://img/enemy/black_assassian/attack/left/05.png" id="20_sd1fy"]
 [ext_resource type="Texture2D" uid="uid://bvoqtom8brjwa" path="res://img/enemy/black_assassian/running/right/07.png" id="21_ajrmk"]
-[ext_resource type="Texture2D" uid="uid://bo1rguq1pikx2" path="res://img/enemy/black_assassian/attack/left/06.png" id="21_m5vki"]
-[ext_resource type="Texture2D" uid="uid://c2g467wx076kg" path="res://img/enemy/black_assassian/attack/left/07.png" id="22_ajrmk"]
+[ext_resource type="Texture2D" uid="uid://c5ohtkfwjfno3" path="res://img/enemy/black_assassian/attack/left/06.png" id="21_m5vki"]
+[ext_resource type="Texture2D" uid="uid://bq8fe3g8j4bkv" path="res://img/enemy/black_assassian/attack/left/07.png" id="22_ajrmk"]
 [ext_resource type="Texture2D" uid="uid://cj4jmgqd0ybu0" path="res://img/enemy/black_assassian/running/down/01.png" id="22_wuy67"]
 [ext_resource type="Texture2D" uid="uid://cncvx4v302fcl" path="res://img/enemy/black_assassian/running/down/02.png" id="23_gvoh0"]
-[ext_resource type="Texture2D" uid="uid://ci3gkvcshs1kw" path="res://img/enemy/black_assassian/attack/left/08.png" id="23_wuy67"]
+[ext_resource type="Texture2D" uid="uid://vd6ql84kqo5h" path="res://img/enemy/black_assassian/attack/left/08.png" id="23_wuy67"]
 [ext_resource type="Texture2D" uid="uid://cu3v7l1ewkbih" path="res://img/enemy/black_assassian/attack/left/09.png" id="24_gvoh0"]
 [ext_resource type="Texture2D" uid="uid://2lgisvdqepde" path="res://img/enemy/black_assassian/running/down/03.png" id="24_wej8j"]
 [ext_resource type="Texture2D" uid="uid://bdl2husprldan" path="res://img/enemy/black_assassian/running/down/04.png" id="25_pgly2"]
@@ -60,9 +60,9 @@
 [ext_resource type="Texture2D" uid="uid://bbgwq8b1iocb7" path="res://img/enemy/black_assassian/attack/right/03.png" id="30_n127r"]
 [ext_resource type="Texture2D" uid="uid://b0b8nsono3h00" path="res://img/enemy/black_assassian/attack/right/04.png" id="31_fb5on"]
 [ext_resource type="Texture2D" uid="uid://d3pmhntigfgb3" path="res://img/enemy/black_assassian/attack/right/05.png" id="32_7re2p"]
-[ext_resource type="Texture2D" uid="uid://c0vndwrqr730e" path="res://img/enemy/black_assassian/attack/right/06.png" id="33_hcj47"]
-[ext_resource type="Texture2D" uid="uid://g2yctb5mlumw" path="res://img/enemy/black_assassian/attack/right/07.png" id="34_1mwbq"]
-[ext_resource type="Texture2D" uid="uid://cr2312ahf18a2" path="res://img/enemy/black_assassian/attack/right/08.png" id="35_amyyd"]
+[ext_resource type="Texture2D" uid="uid://mwl0ljexc2o1" path="res://img/enemy/black_assassian/attack/right/06.png" id="33_hcj47"]
+[ext_resource type="Texture2D" uid="uid://bs6udm7lq8dfc" path="res://img/enemy/black_assassian/attack/right/07.png" id="34_1mwbq"]
+[ext_resource type="Texture2D" uid="uid://c7eepgpnda1g5" path="res://img/enemy/black_assassian/attack/right/08.png" id="35_amyyd"]
 [ext_resource type="Texture2D" uid="uid://dndlnjtm04k71" path="res://img/enemy/black_assassian/attack/right/09.png" id="36_gquc1"]
 [ext_resource type="Texture2D" uid="uid://bol28v5xloy6v" path="res://img/enemy/black_assassian/attack/right/10.png" id="37_sbdwn"]
 [ext_resource type="Texture2D" uid="uid://dliqolfjyb0i8" path="res://img/enemy/black_assassian/attack/right/11.png" id="38_wjkoq"]
@@ -73,9 +73,9 @@
 [ext_resource type="Texture2D" uid="uid://qpib6f8ck720" path="res://img/enemy/black_assassian/attack/up/03.png" id="44_cxa2y"]
 [ext_resource type="Texture2D" uid="uid://clws7b28u3s8c" path="res://img/enemy/black_assassian/attack/up/04.png" id="45_65tyi"]
 [ext_resource type="Texture2D" uid="uid://ca1n8jwr8d0u6" path="res://img/enemy/black_assassian/attack/up/05.png" id="46_7egdr"]
-[ext_resource type="Texture2D" uid="uid://cwsy13tsfmbtv" path="res://img/enemy/black_assassian/attack/up/06.png" id="47_o4eu5"]
-[ext_resource type="Texture2D" uid="uid://d22n6vr3pkwil" path="res://img/enemy/black_assassian/attack/up/07.png" id="48_rfu74"]
-[ext_resource type="Texture2D" uid="uid://pwffj6pdqwj1" path="res://img/enemy/black_assassian/attack/up/08.png" id="49_nctko"]
+[ext_resource type="Texture2D" uid="uid://bhwsrbyou0xbo" path="res://img/enemy/black_assassian/attack/up/06.png" id="47_o4eu5"]
+[ext_resource type="Texture2D" uid="uid://diun6f5n2pji4" path="res://img/enemy/black_assassian/attack/up/07.png" id="48_rfu74"]
+[ext_resource type="Texture2D" uid="uid://cjn440h3gpt18" path="res://img/enemy/black_assassian/attack/up/08.png" id="49_nctko"]
 [ext_resource type="Texture2D" uid="uid://l8r6e6qm7s7i" path="res://img/enemy/black_assassian/attack/up/09.png" id="50_oimuc"]
 [ext_resource type="Texture2D" uid="uid://dx1qgsh4shcb1" path="res://img/enemy/black_assassian/attack/up/10.png" id="51_yjy44"]
 [ext_resource type="Texture2D" uid="uid://cj1bra07dt80p" path="res://img/enemy/black_assassian/attack/up/11.png" id="52_kd1kl"]
@@ -440,10 +440,10 @@ size = Vector3(0.5, 0.4, 1)
 size = Vector3(0.5, 0.4, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hc5wt"]
-size = Vector3(0.4, 0.7, 1)
+size = Vector3(0.4, 0.6, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4ea0w"]
-size = Vector3(0.4, 0.7, 1)
+size = Vector3(0.4, 0.6, 1)
 
 [node name="black_assassian" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)

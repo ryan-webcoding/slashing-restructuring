@@ -3,6 +3,12 @@ extends CharacterBody3D
 @onready var anim_lower = $animation_lower
 @onready var anim_upper = $animation_upper
 @onready var upper_body = $upper_body
+@onready var endurance_bar = $endurance_bar
+
+@export var endurancebar_color_high: Color = Color(0.0, 1.0, 0.0)  # Green
+@export var endurancebar_color_mid: Color = Color(1.0, 1.0, 0.0)   # Yellow
+@export var endurancebar_color_low: Color = Color(1.0, 0.0, 0.0)   # Red
+
 
 @onready var hit_areas := {
 	"up": $hit_area_up,
@@ -16,11 +22,22 @@ var last_input_vector := Vector2(0, 1)
 var is_slashing := false
 var is_dead := false
 
+# ---- Endurance System ----
+var endurance := 80.0
+const MAX_ENDURANCE := 80.0
+const SLASH_COST := 10.0
+const REGEN_RATE := 80.0  # per second
+const REGEN_DELAY := 0.5  # seconds
+var time_since_last_slash := 0.0
+var time_since_last_endurance_change := 0.0
+
 func _ready():
-	add_to_group("players")  # 👈 Add player to "players" group
+	add_to_group("players")
 	anim_lower.play("idle_down")
 	anim_upper.stop()
 	upper_body.hide()
+	endurance_bar.visible = true
+	update_endurance_bar()  # Initialize appearance
 
 func _physics_process(delta):
 	if is_dead:
@@ -52,14 +69,32 @@ func _physics_process(delta):
 			upper_body.hide()
 		play_idle_animation(last_input_vector)
 
-	if Input.is_action_just_pressed("slash") and not is_slashing:
+	if Input.is_action_just_pressed("slash") and not is_slashing and endurance >= SLASH_COST:
 		start_slash()
 
+	# Regeneration logic
+	if time_since_last_slash >= REGEN_DELAY and endurance < MAX_ENDURANCE:
+		var previous_endurance = endurance
+		endurance = min(MAX_ENDURANCE, endurance + REGEN_RATE * delta)
+		if endurance != previous_endurance:
+			time_since_last_endurance_change = 0.0
+			update_endurance_bar()
+	else:
+		time_since_last_slash += delta
+
+	time_since_last_endurance_change += delta
+	if endurance >= MAX_ENDURANCE and time_since_last_endurance_change >= 1.0:
+		endurance_bar.visible = false
 
 # ---- Slash Logic ----
 
 func start_slash() -> void:
 	is_slashing = true
+	endurance -= SLASH_COST
+	time_since_last_slash = 0.0
+	time_since_last_endurance_change = 0.0
+	update_endurance_bar()
+
 	var dir_name = get_direction_name(last_input_vector)
 	var variation = randi() % 2 + 1
 
@@ -134,6 +169,7 @@ func take_damage():
 		return
 	is_dead = true
 
+	# Play death animation based on direction
 	var dir_name = get_direction_name(last_input_vector)
 	var death_anim = "stab_death_" + dir_name
 
@@ -145,3 +181,23 @@ func take_damage():
 	if anim_upper.is_playing():
 		anim_upper.stop()
 	upper_body.hide()
+
+	# Trigger camera shake
+	var camera = get_tree().get_root().get_node("game/Camera3D")
+	if camera and camera.has_method("start_shake"):
+		camera.start_shake()
+
+
+
+# ---- Endurance Bar Visual ----
+
+func update_endurance_bar():
+	endurance_bar.scale.x = endurance
+	endurance_bar.visible = true
+
+	if endurance >= 40:
+		endurance_bar.modulate = endurancebar_color_high
+	elif endurance >= 24:
+		endurance_bar.modulate = endurancebar_color_mid
+	else:
+		endurance_bar.modulate = endurancebar_color_low
