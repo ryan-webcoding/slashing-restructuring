@@ -1,0 +1,310 @@
+[gd_scene load_steps=101 format=3 uid="uid://i7iyc5hlmqoa"]
+
+[ext_resource type="Script" uid="uid://dwwoa573gcs8u" path="res://enemy/japanese_thug/japanese_thug.gd" id="1_foawq"]
+[ext_resource type="Texture2D" uid="uid://yt3lh5m63nsi" path="res://img/enemy/japanese_thug/running/down/02.png" id="1_por0d"]
+[ext_resource type="Texture2D" uid="uid://bnn40wnvo0olf" path="res://img/enemy/japanese_thug/running/down/03.png" id="2_foawq"]
+[ext_resource type="Texture2D" uid="uid://hvbhog2ld6y6" path="res://img/enemy/japanese_thug/running/down/04.png" id="3_51foo"]
+[ext_resource type="Texture2D" uid="uid://csbteeijdtdjs" path="res://img/enemy/japanese_thug/running/down/05.png" id="4_x4t7c"]
+[ext_resource type="Texture2D" uid="uid://b5np4ogg2aoit" path="res://img/enemy/japanese_thug/running/down/06.png" id="5_bweeh"]
+[ext_resource type="Texture2D" uid="uid://do0ywet14m5l5" path="res://img/enemy/japanese_thug/running/down/07.png" id="6_iui77"]
+[ext_resource type="Texture2D" uid="uid://bgiwvtdpu1exv" path="res://img/enemy/japanese_thug/running/down/08.png" id="7_x0wdh"]
+[ext_resource type="Texture2D" uid="uid://cfynhed2fhepf" path="res://img/enemy/japanese_thug/running/down/09.png" id="8_ky4xf"]
+[ext_resource type="Texture2D" uid="uid://c1vtgjjyrq27v" path="res://img/enemy/japanese_thug/running/down/10.png" id="9_uy0hn"]
+[ext_resource type="Texture2D" uid="uid://78hx8fmxeyqa" path="res://img/enemy/japanese_thug/running/down/11.png" id="10_7cylh"]
+[ext_resource type="Texture2D" uid="uid://c8fsc5q4r6pcm" path="res://img/enemy/japanese_thug/running/up/02.png" id="11_2r7yv"]
+[ext_resource type="Texture2D" uid="uid://bc5e2lsvmio4a" path="res://img/enemy/japanese_thug/running/up/03.png" id="12_lrh20"]
+[ext_resource type="Texture2D" uid="uid://bsorqj40sbyyv" path="res://img/enemy/japanese_thug/running/up/04.png" id="13_mogxf"]
+[ext_resource type="Texture2D" uid="uid://b5g1gp3oyrh28" path="res://img/enemy/japanese_thug/running/up/05.png" id="14_stkrw"]
+[ext_resource type="Texture2D" uid="uid://b2cra7o15vfgl" path="res://img/enemy/japanese_thug/running/up/06.png" id="15_rfqvq"]
+[ext_resource type="Texture2D" uid="uid://bkklojimers5v" path="res://img/enemy/japanese_thug/running/up/07.png" id="16_17xex"]
+[ext_resource type="Texture2D" uid="uid://cq42peeegirpc" path="res://img/enemy/japanese_thug/running/up/08.png" id="17_ed8iy"]
+[ext_resource type="Texture2D" uid="uid://bkkjbwu1ik8u" path="res://img/enemy/japanese_thug/running/up/09.png" id="18_pidwp"]
+[ext_resource type="Texture2D" uid="uid://cpt144d8qqjrj" path="res://img/enemy/japanese_thug/running/up/10.png" id="19_xosrd"]
+[ext_resource type="Texture2D" uid="uid://c74tv375yksi3" path="res://img/enemy/japanese_thug/running/up/11.png" id="20_127nv"]
+[ext_resource type="Texture2D" uid="uid://c32go70ek61ol" path="res://img/enemy/japanese_thug/running/left/01.png" id="21_5l7x4"]
+[ext_resource type="Texture2D" uid="uid://qqb25cttq4jq" path="res://img/enemy/japanese_thug/running/left/02.png" id="22_d5ae7"]
+[ext_resource type="Texture2D" uid="uid://c1lqdqsmuaq4v" path="res://img/enemy/japanese_thug/running/left/03.png" id="23_mnmp2"]
+[ext_resource type="Texture2D" uid="uid://byeiv7c8d75dw" path="res://img/enemy/japanese_thug/running/left/04.png" id="24_gcfq1"]
+[ext_resource type="Texture2D" uid="uid://c2tpj0210aaqa" path="res://img/enemy/japanese_thug/running/left/05.png" id="25_5vtnc"]
+[ext_resource type="Texture2D" uid="uid://brrmml4ybr77c" path="res://img/enemy/japanese_thug/running/left/06.png" id="26_nqd7m"]
+[ext_resource type="Texture2D" uid="uid://d0nxeaxvgr3th" path="res://img/enemy/japanese_thug/running/left/07.png" id="27_gneb1"]
+[ext_resource type="Texture2D" uid="uid://bh3eabsl002ot" path="res://img/enemy/japanese_thug/running/left/08.png" id="28_6tlu2"]
+[ext_resource type="Texture2D" uid="uid://cpk3av2bmwsne" path="res://img/enemy/japanese_thug/running/left/09.png" id="29_qsku0"]
+[ext_resource type="Texture2D" uid="uid://c8corneauust4" path="res://img/enemy/japanese_thug/running/left/10.png" id="30_47kwh"]
+[ext_resource type="Texture2D" uid="uid://yxk8mguhpc6f" path="res://img/enemy/japanese_thug/running/left/11.png" id="31_ksjtj"]
+[ext_resource type="Texture2D" uid="uid://b6ah02rtwq2ai" path="res://img/enemy/japanese_thug/running/right/01.png" id="32_rjaog"]
+[ext_resource type="Texture2D" uid="uid://b1jj82jadjr3u" path="res://img/enemy/japanese_thug/running/right/02.png" id="33_i0yn7"]
+[ext_resource type="Texture2D" uid="uid://ce1i71mr4ylrx" path="res://img/enemy/japanese_thug/running/right/03.png" id="34_yj17d"]
+[ext_resource type="Texture2D" uid="uid://dd701m0mvjhp3" path="res://img/enemy/japanese_thug/running/right/04.png" id="35_gi3m0"]
+[ext_resource type="Texture2D" uid="uid://cvmbgx0mj4qx" path="res://img/enemy/japanese_thug/running/right/05.png" id="36_yeidq"]
+[ext_resource type="Texture2D" uid="uid://dbjbi6tos0jal" path="res://img/enemy/japanese_thug/running/right/06.png" id="37_x8ote"]
+[ext_resource type="Texture2D" uid="uid://dr33t5wvvo8xx" path="res://img/enemy/japanese_thug/running/right/07.png" id="38_qi8dr"]
+[ext_resource type="Texture2D" uid="uid://cv5ld037ju8eq" path="res://img/enemy/japanese_thug/running/right/08.png" id="39_cbhsu"]
+[ext_resource type="Texture2D" uid="uid://bhi6xynpdcu6u" path="res://img/enemy/japanese_thug/running/right/09.png" id="40_3lqhv"]
+[ext_resource type="Texture2D" uid="uid://dfkvt0kfjnpxb" path="res://img/enemy/japanese_thug/running/right/10.png" id="41_h1riu"]
+[ext_resource type="Texture2D" uid="uid://cjrexife6wgss" path="res://img/enemy/japanese_thug/running/right/11.png" id="42_cvxr3"]
+[ext_resource type="Texture2D" uid="uid://bi8yieyr2av1t" path="res://img/enemy/japanese_thug/attack/up/01.png" id="43_v5g7w"]
+[ext_resource type="Texture2D" uid="uid://cpvhr6mlb11gm" path="res://img/enemy/japanese_thug/attack/up/02.png" id="44_s3dog"]
+[ext_resource type="Texture2D" uid="uid://1fgsyts0qgq1" path="res://img/enemy/japanese_thug/attack/up/03.png" id="45_isx2p"]
+[ext_resource type="Texture2D" uid="uid://eghcsr565bsw" path="res://img/enemy/japanese_thug/attack/up/04.png" id="46_djdk0"]
+[ext_resource type="Texture2D" uid="uid://dak3hm208bxxq" path="res://img/enemy/japanese_thug/attack/up/05.png" id="47_1u8x4"]
+[ext_resource type="Texture2D" uid="uid://oge8w6sa6ddk" path="res://img/enemy/japanese_thug/attack/up/06.png" id="48_l5caf"]
+[ext_resource type="Texture2D" uid="uid://yjpgotsuw44d" path="res://img/enemy/japanese_thug/attack/up/07.png" id="49_xav1d"]
+[ext_resource type="Texture2D" uid="uid://bbgnstjdbldwn" path="res://img/enemy/japanese_thug/attack/up/08.png" id="50_mcleb"]
+[ext_resource type="Texture2D" uid="uid://d4i7wom5fyctn" path="res://img/enemy/japanese_thug/attack/up/09.png" id="51_bbw66"]
+[ext_resource type="Texture2D" uid="uid://dpdwp4fg3o01k" path="res://img/enemy/japanese_thug/attack/up/10.png" id="52_heno0"]
+[ext_resource type="Texture2D" uid="uid://cpq0vp801qdj4" path="res://img/enemy/japanese_thug/attack/down/02.png" id="53_8bcou"]
+[ext_resource type="Texture2D" uid="uid://dlkyodoiw4exo" path="res://img/enemy/japanese_thug/attack/down/03.png" id="54_iyu7f"]
+[ext_resource type="Texture2D" uid="uid://dp12kdfr284lh" path="res://img/enemy/japanese_thug/attack/down/04.png" id="55_jgodd"]
+[ext_resource type="Texture2D" uid="uid://beswyxm4vu4jp" path="res://img/enemy/japanese_thug/attack/down/05.png" id="56_37v51"]
+[ext_resource type="Texture2D" uid="uid://befgrc336u46o" path="res://img/enemy/japanese_thug/attack/down/06.png" id="57_qdq2i"]
+[ext_resource type="Texture2D" uid="uid://bcn278qvgy3ns" path="res://img/enemy/japanese_thug/attack/down/07.png" id="58_nd1ha"]
+[ext_resource type="Texture2D" uid="uid://bhsqwew2djv0j" path="res://img/enemy/japanese_thug/attack/down/08.png" id="59_3dv5c"]
+[ext_resource type="Texture2D" uid="uid://bala0xajsg8do" path="res://img/enemy/japanese_thug/attack/down/09.png" id="60_01eyl"]
+[ext_resource type="Texture2D" uid="uid://dthq5i1l400y3" path="res://img/enemy/japanese_thug/attack/down/10.png" id="61_uqoot"]
+[ext_resource type="Texture2D" uid="uid://cv07cxa6gcpef" path="res://img/enemy/japanese_thug/attack/left/01.png" id="62_0if3g"]
+[ext_resource type="Texture2D" uid="uid://cq1f8nmvxi6qa" path="res://img/enemy/japanese_thug/attack/left/02.png" id="63_vpyll"]
+[ext_resource type="Texture2D" uid="uid://bn340l1nhqnmp" path="res://img/enemy/japanese_thug/attack/left/03.png" id="64_4tx8b"]
+[ext_resource type="Texture2D" uid="uid://dm3lgevppeiei" path="res://img/enemy/japanese_thug/attack/left/04.png" id="65_d8x2i"]
+[ext_resource type="Texture2D" uid="uid://ckam2oco8oi10" path="res://img/enemy/japanese_thug/attack/left/05.png" id="66_c084r"]
+[ext_resource type="Texture2D" uid="uid://cef4y6r43c58y" path="res://img/enemy/japanese_thug/attack/left/06.png" id="67_l507g"]
+[ext_resource type="Texture2D" uid="uid://d0xjfhsmvq5mc" path="res://img/enemy/japanese_thug/attack/left/07.png" id="68_csuso"]
+[ext_resource type="Texture2D" uid="uid://b2mhuq71d3ojr" path="res://img/enemy/japanese_thug/attack/left/08.png" id="69_unr33"]
+[ext_resource type="Texture2D" uid="uid://be26pw343s5u8" path="res://img/enemy/japanese_thug/attack/left/09.png" id="70_ecpx5"]
+[ext_resource type="Texture2D" uid="uid://bs42trm5nrbvy" path="res://img/enemy/japanese_thug/attack/left/10.png" id="71_g0vpt"]
+[ext_resource type="Texture2D" uid="uid://bnoqmoruuoikc" path="res://img/enemy/japanese_thug/attack/right/01.png" id="72_gk504"]
+[ext_resource type="Texture2D" uid="uid://dmioies5bhgsb" path="res://img/enemy/japanese_thug/attack/right/02.png" id="73_wobn2"]
+[ext_resource type="Texture2D" uid="uid://qjubi5q8uf7j" path="res://img/enemy/japanese_thug/attack/right/03.png" id="74_nu68u"]
+[ext_resource type="Texture2D" uid="uid://beiyaben1v1ib" path="res://img/enemy/japanese_thug/attack/right/04.png" id="75_om0wp"]
+[ext_resource type="Texture2D" uid="uid://bkk2ov4xxskve" path="res://img/enemy/japanese_thug/attack/right/05.png" id="76_f0m0k"]
+[ext_resource type="Texture2D" uid="uid://chfae4u1motgl" path="res://img/enemy/japanese_thug/attack/right/06.png" id="77_87pj4"]
+[ext_resource type="Texture2D" uid="uid://hd1xubdvlq80" path="res://img/enemy/japanese_thug/attack/right/07.png" id="78_mi8ku"]
+[ext_resource type="Texture2D" uid="uid://5642kn1wa3si" path="res://img/enemy/japanese_thug/attack/right/08.png" id="79_mtj2y"]
+[ext_resource type="Texture2D" uid="uid://dmg28n1l3nu14" path="res://img/enemy/japanese_thug/attack/right/09.png" id="80_thtvj"]
+[ext_resource type="Texture2D" uid="uid://5f68bn4m1bx4" path="res://img/enemy/japanese_thug/attack/right/10.png" id="81_f8pqr"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_57vyl"]
+radius = 0.2
+height = 0.661
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_swny8"]
+load_path = "res://.godot/imported/01.png-b7ee92aa1c0344e9d6696f72c2b4e5be.s3tc.ctex"
+
+[sub_resource type="Animation" id="Animation_a4eyv"]
+resource_name = "run_down"
+length = 0.66667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("CompressedTexture2D_swny8"), ExtResource("1_por0d"), ExtResource("2_foawq"), ExtResource("3_51foo"), ExtResource("4_x4t7c"), ExtResource("5_bweeh"), ExtResource("6_iui77"), ExtResource("7_x0wdh"), ExtResource("8_ky4xf"), ExtResource("9_uy0hn"), ExtResource("10_7cylh")]
+}
+
+[sub_resource type="Animation" id="Animation_xma7c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("CompressedTexture2D_swny8")]
+}
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k1p3p"]
+load_path = "res://.godot/imported/01.png-2113492ff348a45f843b6a85eb21578d.s3tc.ctex"
+
+[sub_resource type="Animation" id="Animation_8g3nh"]
+resource_name = "run_up"
+length = 0.66667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("CompressedTexture2D_k1p3p"), ExtResource("11_2r7yv"), ExtResource("12_lrh20"), ExtResource("13_mogxf"), ExtResource("14_stkrw"), ExtResource("15_rfqvq"), ExtResource("16_17xex"), ExtResource("17_ed8iy"), ExtResource("18_pidwp"), ExtResource("19_xosrd"), ExtResource("20_127nv")]
+}
+
+[sub_resource type="Animation" id="Animation_22qte"]
+resource_name = "run_left"
+length = 0.66667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("21_5l7x4"), ExtResource("22_d5ae7"), ExtResource("23_mnmp2"), ExtResource("24_gcfq1"), ExtResource("25_5vtnc"), ExtResource("26_nqd7m"), ExtResource("27_gneb1"), ExtResource("28_6tlu2"), ExtResource("29_qsku0"), ExtResource("30_47kwh"), ExtResource("31_ksjtj")]
+}
+
+[sub_resource type="Animation" id="Animation_qoc7t"]
+resource_name = "run_right"
+length = 0.66667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("32_rjaog"), ExtResource("33_i0yn7"), ExtResource("34_yj17d"), ExtResource("35_gi3m0"), ExtResource("36_yeidq"), ExtResource("37_x8ote"), ExtResource("38_qi8dr"), ExtResource("39_cbhsu"), ExtResource("40_3lqhv"), ExtResource("41_h1riu"), ExtResource("42_cvxr3")]
+}
+
+[sub_resource type="Animation" id="Animation_hmsnc"]
+resource_name = "attack_up"
+length = 0.600003
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("43_v5g7w"), ExtResource("44_s3dog"), ExtResource("45_isx2p"), ExtResource("46_djdk0"), ExtResource("47_1u8x4"), ExtResource("48_l5caf"), ExtResource("49_xav1d"), ExtResource("50_mcleb"), ExtResource("51_bbw66"), ExtResource("52_heno0")]
+}
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2h1jp"]
+load_path = "res://.godot/imported/01.png-036ca781dd922e2dff17da6d18f947ae.s3tc.ctex"
+
+[sub_resource type="Animation" id="Animation_1t8tr"]
+resource_name = "attack_down"
+length = 0.600003
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("CompressedTexture2D_2h1jp"), ExtResource("53_8bcou"), ExtResource("54_iyu7f"), ExtResource("55_jgodd"), ExtResource("56_37v51"), ExtResource("57_qdq2i"), ExtResource("58_nd1ha"), ExtResource("59_3dv5c"), ExtResource("60_01eyl"), ExtResource("61_uqoot")]
+}
+
+[sub_resource type="Animation" id="Animation_lryhy"]
+resource_name = "attack_left"
+length = 0.600003
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("62_0if3g"), ExtResource("63_vpyll"), ExtResource("64_4tx8b"), ExtResource("65_d8x2i"), ExtResource("66_c084r"), ExtResource("67_l507g"), ExtResource("68_csuso"), ExtResource("69_unr33"), ExtResource("70_ecpx5"), ExtResource("71_g0vpt")]
+}
+
+[sub_resource type="Animation" id="Animation_6fdn5"]
+resource_name = "attack_right"
+length = 0.600003
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("72_gk504"), ExtResource("73_wobn2"), ExtResource("74_nu68u"), ExtResource("75_om0wp"), ExtResource("76_f0m0k"), ExtResource("77_87pj4"), ExtResource("78_mi8ku"), ExtResource("79_mtj2y"), ExtResource("80_thtvj"), ExtResource("81_f8pqr")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gksnp"]
+_data = {
+&"RESET": SubResource("Animation_xma7c"),
+&"attack_down": SubResource("Animation_1t8tr"),
+&"attack_left": SubResource("Animation_lryhy"),
+&"attack_right": SubResource("Animation_6fdn5"),
+&"attack_up": SubResource("Animation_hmsnc"),
+&"run_down": SubResource("Animation_a4eyv"),
+&"run_left": SubResource("Animation_22qte"),
+&"run_right": SubResource("Animation_qoc7t"),
+&"run_up": SubResource("Animation_8g3nh")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1xo7o"]
+size = Vector3(0.5, 0.4, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j4yu6"]
+size = Vector3(0.5, 0.4, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vf384"]
+size = Vector3(0.4, 0.6, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lq1vi"]
+size = Vector3(0.4, 0.6, 1)
+
+[node name="japanese_thug" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_foawq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_57vyl")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 1
+texture_filter = 0
+texture = SubResource("CompressedTexture2D_swny8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_gksnp")
+}
+
+[node name="hit_area_up" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hit_area_up"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24, 0)
+shape = SubResource("BoxShape3D_1xo7o")
+
+[node name="hit_area_down" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hit_area_down"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24, 0)
+shape = SubResource("BoxShape3D_j4yu6")
+
+[node name="hit_area_left" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hit_area_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24, 0, 0)
+shape = SubResource("BoxShape3D_vf384")
+
+[node name="hit_area_right" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hit_area_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24, 0, 0)
+shape = SubResource("BoxShape3D_lq1vi")

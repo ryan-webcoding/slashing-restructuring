@@ -5,10 +5,20 @@ extends CharacterBody3D
 @onready var upper_body = $upper_body
 @onready var endurance_bar = $endurance_bar
 
-@export var endurancebar_color_high: Color = Color(0.0, 1.0, 0.0)  # Green
-@export var endurancebar_color_mid: Color = Color(1.0, 1.0, 0.0)   # Yellow
-@export var endurancebar_color_low: Color = Color(1.0, 0.0, 0.0)   # Red
+@export var endurancebar_color_high: Color = Color(0.0, 1.0, 0.0)
+@export var endurancebar_color_mid: Color = Color(1.0, 1.0, 0.0)
+@export var endurancebar_color_low: Color = Color(1.0, 0.0, 0.0)
 
+# Dash
+var is_dashing := false
+var is_decelerating := false
+var dash_timer := 0.0
+var decel_timer := 0.0
+const DASH_DURATION := 0.1
+const DASH_SPEED := 12.0
+const SPEED := 5.0
+const DECEL_DURATION := 0.1
+const DASH_COST := 10.0
 
 @onready var hit_areas := {
 	"up": $hit_area_up,
@@ -17,17 +27,16 @@ extends CharacterBody3D
 	"right": $hit_area_right
 }
 
-const SPEED := 5.0
 var last_input_vector := Vector2(0, 1)
 var is_slashing := false
 var is_dead := false
 
-# ---- Endurance System ----
+# Endurance
 var endurance := 80.0
 const MAX_ENDURANCE := 80.0
 const SLASH_COST := 10.0
-const REGEN_RATE := 80.0  # per second
-const REGEN_DELAY := 0.5  # seconds
+const REGEN_RATE := 80.0
+const REGEN_DELAY := 0.5
 var time_since_last_slash := 0.0
 var time_since_last_endurance_change := 0.0
 
@@ -37,7 +46,7 @@ func _ready():
 	anim_upper.stop()
 	upper_body.hide()
 	endurance_bar.visible = true
-	update_endurance_bar()  # Initialize appearance
+	update_endurance_bar()
 
 func _physics_process(delta):
 	if is_dead:
@@ -45,6 +54,38 @@ func _physics_process(delta):
 		move_and_slide()
 		return
 
+	# Dash phase
+	if is_dashing:
+		dash_timer -= delta
+		if dash_timer <= 0:
+			is_dashing = false
+			is_decelerating = true
+			decel_timer = DECEL_DURATION
+		move_and_slide()
+		return
+
+	# Deceleration phase
+	if is_decelerating:
+		decel_timer -= delta
+		var t = 1.0 - (decel_timer / DECEL_DURATION)
+		var current_speed = lerp(DASH_SPEED, SPEED, t)
+
+		var input_vector := Input.get_vector("run_left", "run_right", "run_up", "run_down")
+		if input_vector != Vector2.ZERO:
+			last_input_vector = input_vector
+			velocity.x = input_vector.x * current_speed
+			velocity.z = input_vector.y * current_speed
+		else:
+			velocity.x = move_toward(velocity.x, 0, SPEED)
+			velocity.z = move_toward(velocity.z, 0, SPEED)
+
+		move_and_slide()
+
+		if decel_timer <= 0:
+			is_decelerating = false
+
+
+	# Regular movement
 	var input_vector := Input.get_vector("run_left", "run_right", "run_up", "run_down")
 
 	if is_slashing:
@@ -71,8 +112,10 @@ func _physics_process(delta):
 
 	if Input.is_action_just_pressed("slash") and not is_slashing and endurance >= SLASH_COST:
 		start_slash()
+	if Input.is_action_just_pressed("dash") and not is_dashing and not is_slashing:
+		start_dash()
 
-	# Regeneration logic
+	# Endurance regen
 	if time_since_last_slash >= REGEN_DELAY and endurance < MAX_ENDURANCE:
 		var previous_endurance = endurance
 		endurance = min(MAX_ENDURANCE, endurance + REGEN_RATE * delta)
@@ -124,7 +167,6 @@ func _disconnect_all_slash_signals():
 	if anim_lower.is_connected("animation_finished", Callable(self, "_on_slash_finished")):
 		anim_lower.disconnect("animation_finished", Callable(self, "_on_slash_finished"))
 
-
 # ---- Damage Output ----
 
 func deal_damage():
@@ -134,7 +176,6 @@ func deal_damage():
 		for body in area_to_check.get_overlapping_bodies():
 			if body != self and body.is_in_group("enemies") and body.has_method("take_damage"):
 				body.take_damage()
-
 
 # ---- Animation Helpers ----
 
@@ -152,7 +193,6 @@ func play_idle_animation(dir: Vector2) -> void:
 	if anim_upper.is_playing():
 		anim_upper.stop()
 
-
 # ---- Direction ----
 
 func get_direction_name(dir: Vector2) -> String:
@@ -161,7 +201,6 @@ func get_direction_name(dir: Vector2) -> String:
 	else:
 		return "down" if dir.y > 0 else "up"
 
-
 # ---- Death ----
 
 func take_damage():
@@ -169,7 +208,6 @@ func take_damage():
 		return
 	is_dead = true
 
-	# Play death animation based on direction
 	var dir_name = get_direction_name(last_input_vector)
 	var death_anim = "stab_death_" + dir_name
 
@@ -182,12 +220,9 @@ func take_damage():
 		anim_upper.stop()
 	upper_body.hide()
 
-	# Trigger camera shake
 	var camera = get_tree().get_root().get_node("game/Camera3D")
 	if camera and camera.has_method("start_shake"):
 		camera.start_shake()
-
-
 
 # ---- Endurance Bar Visual ----
 
@@ -201,3 +236,18 @@ func update_endurance_bar():
 		endurance_bar.modulate = endurancebar_color_mid
 	else:
 		endurance_bar.modulate = endurancebar_color_low
+
+# ---- Dash ----
+func start_dash():
+	if velocity.length() == 0 or endurance < DASH_COST:
+		return
+	endurance -= DASH_COST
+	time_since_last_slash = 0.0
+	time_since_last_endurance_change = 0.0
+	update_endurance_bar()
+
+	is_dashing = true
+	is_decelerating = false
+	dash_timer = DASH_DURATION
+	velocity.x = last_input_vector.x * DASH_SPEED
+	velocity.z = last_input_vector.y * DASH_SPEED

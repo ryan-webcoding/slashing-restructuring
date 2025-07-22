@@ -21,7 +21,6 @@ var is_dead := false
 
 func _ready():
 	add_to_group("enemies")  # 👈 Add assassin to "enemies" group
-
 	for area in hit_areas.values():
 		area.monitoring = true
 		area.monitorable = true
