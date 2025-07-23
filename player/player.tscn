@@ -1059,24 +1059,28 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 
 shape = SubResource("CapsuleShape3D_r7062")
 
 [node name="hit_area_up" type="Area3D" parent="."]
+collision_mask = 6
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hit_area_up"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.47)
 shape = SubResource("BoxShape3D_vvji8")
 
 [node name="hit_area_down" type="Area3D" parent="."]
+collision_mask = 6
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hit_area_down"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.47)
 shape = SubResource("BoxShape3D_xgxvu")
 
 [node name="hit_area_left" type="Area3D" parent="."]
+collision_mask = 6
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hit_area_left"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0, 0)
 shape = SubResource("BoxShape3D_pdnyr")
 
 [node name="hit_area_right" type="Area3D" parent="."]
+collision_mask = 6
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hit_area_right"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0, 0)

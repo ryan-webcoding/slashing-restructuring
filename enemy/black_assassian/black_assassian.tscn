@@ -447,6 +447,7 @@ size = Vector3(0.4, 0.6, 1)
 
 [node name="black_assassian" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+collision_layer = 2
 script = ExtResource("1_7qph6")
 speed = 5.0
 

@@ -1,0 +1,221 @@
+[gd_scene load_steps=57 format=3 uid="uid://ptkbym1h8qh3"]
+
+[ext_resource type="Texture2D" uid="uid://b8f3coussht0k" path="res://img/enemy/female_shooter/running/up/01.png" id="1_1vs6y"]
+[ext_resource type="Script" uid="uid://c1yria7uk4r5r" path="res://enemy/female_shooter/female_shooter.gd" id="1_nk4ng"]
+[ext_resource type="Texture2D" uid="uid://cxwfqfcfrj62w" path="res://img/enemy/female_shooter/running/up/02.png" id="2_nk4ng"]
+[ext_resource type="Texture2D" uid="uid://bnm3f6onqoy3m" path="res://img/enemy/female_shooter/running/up/03.png" id="3_vav6f"]
+[ext_resource type="Texture2D" uid="uid://bcuwdgk2a6b1r" path="res://img/enemy/female_shooter/running/up/04.png" id="4_ljqny"]
+[ext_resource type="Texture2D" uid="uid://ceyb88y3xcqc3" path="res://img/enemy/female_shooter/running/up/05.png" id="5_nj6e5"]
+[ext_resource type="Texture2D" uid="uid://b8g3k0i5lmioq" path="res://img/enemy/female_shooter/running/up/06.png" id="6_ydyyh"]
+[ext_resource type="Texture2D" uid="uid://dsnsadtswsmrr" path="res://img/enemy/female_shooter/running/up/07.png" id="7_dw6ma"]
+[ext_resource type="Texture2D" uid="uid://bq43frnnhufdo" path="res://img/enemy/female_shooter/running/up/08.png" id="8_8pk4w"]
+[ext_resource type="Texture2D" uid="uid://dvwpg1hft1652" path="res://img/enemy/female_shooter/running/up/09.png" id="9_y23hb"]
+[ext_resource type="Texture2D" uid="uid://dlkfyt7p0ekh7" path="res://img/enemy/female_shooter/running/up/10.png" id="10_qmpgu"]
+[ext_resource type="Texture2D" uid="uid://h27eca75t2my" path="res://img/enemy/female_shooter/running/down/01.png" id="11_04l4q"]
+[ext_resource type="Texture2D" uid="uid://cfxgmbq25fajj" path="res://img/enemy/female_shooter/running/down/02.png" id="12_hctbr"]
+[ext_resource type="Texture2D" uid="uid://u4mjdpnsyk5i" path="res://img/enemy/female_shooter/running/down/03.png" id="13_iu3db"]
+[ext_resource type="Texture2D" uid="uid://iydu1gt82ym0" path="res://img/enemy/female_shooter/running/down/04.png" id="14_8jcfr"]
+[ext_resource type="Texture2D" uid="uid://begtfoq0lv721" path="res://img/enemy/female_shooter/running/down/05.png" id="15_eekcm"]
+[ext_resource type="Texture2D" uid="uid://cgvat1lwwud66" path="res://img/enemy/female_shooter/running/down/06.png" id="16_crkdu"]
+[ext_resource type="Texture2D" uid="uid://c8e1odvy0bjfv" path="res://img/enemy/female_shooter/running/down/07.png" id="17_wwt2g"]
+[ext_resource type="Texture2D" uid="uid://b031pt5at4g5b" path="res://img/enemy/female_shooter/running/down/08.png" id="18_6n8bd"]
+[ext_resource type="Texture2D" uid="uid://cjppu2klfsx4q" path="res://img/enemy/female_shooter/running/down/09.png" id="19_5ajv3"]
+[ext_resource type="Texture2D" uid="uid://dfbu5vvdoo7nf" path="res://img/enemy/female_shooter/running/down/10.png" id="20_duiue"]
+[ext_resource type="Texture2D" uid="uid://bkll32tnl2dem" path="res://img/enemy/female_shooter/running/left/01.png" id="21_w7cjw"]
+[ext_resource type="Texture2D" uid="uid://citinuoosjihh" path="res://img/enemy/female_shooter/running/left/02.png" id="22_nw7gq"]
+[ext_resource type="Texture2D" uid="uid://benw4k0fodpuo" path="res://img/enemy/female_shooter/running/left/03.png" id="23_a6mto"]
+[ext_resource type="Texture2D" uid="uid://c0w48qnimuhna" path="res://img/enemy/female_shooter/running/left/04.png" id="24_405nf"]
+[ext_resource type="Texture2D" uid="uid://cgty2p6tobpeh" path="res://img/enemy/female_shooter/running/left/05.png" id="25_efa3o"]
+[ext_resource type="Texture2D" uid="uid://4gwj5mr25270" path="res://img/enemy/female_shooter/running/left/06.png" id="26_iiwtr"]
+[ext_resource type="Texture2D" uid="uid://dtvicyiddhnil" path="res://img/enemy/female_shooter/running/left/07.png" id="27_o5o7a"]
+[ext_resource type="Texture2D" uid="uid://csqg1pmr65oln" path="res://img/enemy/female_shooter/running/left/08.png" id="28_wy3m3"]
+[ext_resource type="Texture2D" uid="uid://clgty2gsppesk" path="res://img/enemy/female_shooter/running/left/09.png" id="29_dvc4a"]
+[ext_resource type="Texture2D" uid="uid://wu281mp04kga" path="res://img/enemy/female_shooter/running/left/10.png" id="30_avo2s"]
+[ext_resource type="Texture2D" uid="uid://sb0h1pqj307k" path="res://img/enemy/female_shooter/running/right/01.png" id="31_c4skd"]
+[ext_resource type="Texture2D" uid="uid://dsk44bgl2h8mf" path="res://img/enemy/female_shooter/running/right/02.png" id="32_kj2qk"]
+[ext_resource type="Texture2D" uid="uid://vkqme0xl8fuc" path="res://img/enemy/female_shooter/running/right/03.png" id="33_8jf8k"]
+[ext_resource type="Texture2D" uid="uid://cbthwfciaibj3" path="res://img/enemy/female_shooter/running/right/04.png" id="34_n2uia"]
+[ext_resource type="Texture2D" uid="uid://cdws1vpin5sa6" path="res://img/enemy/female_shooter/running/right/05.png" id="35_7vtph"]
+[ext_resource type="Texture2D" uid="uid://dgahvlq7888mn" path="res://img/enemy/female_shooter/running/right/06.png" id="36_pdon1"]
+[ext_resource type="Texture2D" uid="uid://mbu4ltpiqm8b" path="res://img/enemy/female_shooter/running/right/07.png" id="37_2ki36"]
+[ext_resource type="Texture2D" uid="uid://bw0j8v0ilgjtw" path="res://img/enemy/female_shooter/running/right/08.png" id="38_8x66u"]
+[ext_resource type="Texture2D" uid="uid://bqwlixyu66tco" path="res://img/enemy/female_shooter/running/right/09.png" id="39_mwyat"]
+[ext_resource type="Texture2D" uid="uid://sjrirxjkc3kc" path="res://img/enemy/female_shooter/running/right/10.png" id="40_0rmvp"]
+[ext_resource type="Texture2D" uid="uid://b2gxy53oon6ug" path="res://img/enemy/female_shooter/shooting/shoot_down.png" id="41_stlcv"]
+[ext_resource type="Texture2D" uid="uid://bjdlf4bc62cgh" path="res://img/enemy/female_shooter/shooting/shoot_up.png" id="42_agsnd"]
+[ext_resource type="Texture2D" uid="uid://dh2u3xp6s253a" path="res://img/enemy/female_shooter/shooting/shoot_down_hand.png" id="43_04l70"]
+[ext_resource type="Texture2D" uid="uid://vommk56n4g4m" path="res://img/enemy/female_shooter/shooting/shoot_up_hand.png" id="44_ooe40"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b2c24"]
+load_path = "res://.godot/imported/01.png-58fdcf5b85cd2a4473a849f5fb3c839d.s3tc.ctex"
+
+[sub_resource type="Animation" id="Animation_6i15b"]
+resource_name = "run_up"
+length = 0.600003
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_1vs6y"), ExtResource("2_nk4ng"), ExtResource("3_vav6f"), ExtResource("4_ljqny"), ExtResource("5_nj6e5"), ExtResource("6_ydyyh"), ExtResource("7_dw6ma"), ExtResource("8_8pk4w"), ExtResource("9_y23hb"), ExtResource("10_qmpgu")]
+}
+
+[sub_resource type="Animation" id="Animation_ej1td"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("CompressedTexture2D_b2c24")]
+}
+
+[sub_resource type="Animation" id="Animation_hjyvj"]
+resource_name = "run_down"
+length = 0.600003
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("11_04l4q"), ExtResource("12_hctbr"), ExtResource("13_iu3db"), ExtResource("14_8jcfr"), ExtResource("15_eekcm"), ExtResource("16_crkdu"), ExtResource("17_wwt2g"), ExtResource("18_6n8bd"), ExtResource("19_5ajv3"), ExtResource("20_duiue")]
+}
+
+[sub_resource type="Animation" id="Animation_iaegy"]
+resource_name = "run_left"
+length = 0.600003
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("21_w7cjw"), ExtResource("22_nw7gq"), ExtResource("23_a6mto"), ExtResource("24_405nf"), ExtResource("25_efa3o"), ExtResource("26_iiwtr"), ExtResource("27_o5o7a"), ExtResource("28_wy3m3"), ExtResource("29_dvc4a"), ExtResource("30_avo2s")]
+}
+
+[sub_resource type="Animation" id="Animation_16j2n"]
+resource_name = "run_right"
+length = 0.600003
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("31_c4skd"), ExtResource("32_kj2qk"), ExtResource("33_8jf8k"), ExtResource("34_n2uia"), ExtResource("35_7vtph"), ExtResource("36_pdon1"), ExtResource("37_2ki36"), ExtResource("38_8x66u"), ExtResource("39_mwyat"), ExtResource("40_0rmvp")]
+}
+
+[sub_resource type="Animation" id="Animation_bh1id"]
+resource_name = "shoot_down"
+length = 0.0333367
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("41_stlcv")]
+}
+
+[sub_resource type="Animation" id="Animation_it23a"]
+resource_name = "shoot_up"
+length = 0.0333367
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("42_agsnd")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_khpvp"]
+_data = {
+&"RESET": SubResource("Animation_ej1td"),
+&"run_down": SubResource("Animation_hjyvj"),
+&"run_left": SubResource("Animation_iaegy"),
+&"run_right": SubResource("Animation_16j2n"),
+&"run_up": SubResource("Animation_6i15b"),
+&"shoot_down": SubResource("Animation_bh1id"),
+&"shoot_up": SubResource("Animation_it23a")
+}
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_35pp1"]
+radius = 0.210019
+height = 0.64629
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_gfdbk"]
+radius = 4.0
+
+[node name="female_shooter" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_nk4ng")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 1
+texture_filter = 0
+texture = SubResource("CompressedTexture2D_b2c24")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_khpvp")
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_35pp1")
+
+[node name="arm_pivot_left" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14, 0)
+
+[node name="arm_left" type="Sprite3D" parent="arm_pivot_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.14, 0)
+texture_filter = 0
+texture = ExtResource("43_04l70")
+
+[node name="arm_pivot_right" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14, 0)
+
+[node name="arm_right" type="Sprite3D" parent="arm_pivot_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.14, 0)
+texture_filter = 0
+texture = ExtResource("44_ooe40")
+
+[node name="range" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="range"]
+shape = SubResource("SphereShape3D_gfdbk")
