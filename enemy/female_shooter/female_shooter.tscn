@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://ptkbym1h8qh3"]
+[gd_scene load_steps=123 format=3 uid="uid://ptkbym1h8qh3"]
 
 [ext_resource type="Texture2D" uid="uid://b8f3coussht0k" path="res://img/enemy/female_shooter/running/up/01.png" id="1_1vs6y"]
 [ext_resource type="Script" uid="uid://c1yria7uk4r5r" path="res://enemy/female_shooter/female_shooter.gd" id="1_nk4ng"]
@@ -43,8 +43,72 @@
 [ext_resource type="Texture2D" uid="uid://sjrirxjkc3kc" path="res://img/enemy/female_shooter/running/right/10.png" id="40_0rmvp"]
 [ext_resource type="Texture2D" uid="uid://b2gxy53oon6ug" path="res://img/enemy/female_shooter/shooting/shoot_down.png" id="41_stlcv"]
 [ext_resource type="Texture2D" uid="uid://bjdlf4bc62cgh" path="res://img/enemy/female_shooter/shooting/shoot_up.png" id="42_agsnd"]
+[ext_resource type="Texture2D" uid="uid://bjbrt1mjpekmp" path="res://img/enemy/female_shooter/death/up/01.png" id="42_msicx"]
 [ext_resource type="Texture2D" uid="uid://dh2u3xp6s253a" path="res://img/enemy/female_shooter/shooting/shoot_down_hand.png" id="43_04l70"]
+[ext_resource type="Texture2D" uid="uid://cpq0xir8bgkbc" path="res://img/enemy/female_shooter/death/up/02.png" id="43_oq0no"]
 [ext_resource type="Texture2D" uid="uid://vommk56n4g4m" path="res://img/enemy/female_shooter/shooting/shoot_up_hand.png" id="44_ooe40"]
+[ext_resource type="Texture2D" uid="uid://dbh3ko01w8g4f" path="res://img/enemy/female_shooter/death/up/03.png" id="44_qs4ol"]
+[ext_resource type="Texture2D" uid="uid://b3rueawyrj86i" path="res://img/enemy/female_shooter/death/up/04.png" id="45_be7nb"]
+[ext_resource type="Texture2D" uid="uid://0m51udcfg11q" path="res://img/enemy/female_shooter/death/up/05.png" id="46_mlrrg"]
+[ext_resource type="Texture2D" uid="uid://c0ffpuvvbiema" path="res://img/enemy/female_shooter/death/up/06.png" id="47_pn7ow"]
+[ext_resource type="Texture2D" uid="uid://btvvo4jp74r42" path="res://img/enemy/female_shooter/death/up/07.png" id="48_y0jm8"]
+[ext_resource type="Texture2D" uid="uid://3hqxnwo782ij" path="res://img/enemy/female_shooter/death/up/08.png" id="49_og0sm"]
+[ext_resource type="Texture2D" uid="uid://qcoa8ne16d6o" path="res://img/enemy/female_shooter/death/up/09.png" id="50_38t5o"]
+[ext_resource type="Texture2D" uid="uid://cl2uyeq7psndc" path="res://img/enemy/female_shooter/death/up/10.png" id="51_0gnfs"]
+[ext_resource type="Texture2D" uid="uid://rp1p4luwxptw" path="res://img/enemy/female_shooter/death/up/11.png" id="52_8v74h"]
+[ext_resource type="Texture2D" uid="uid://34wwmnnui8ah" path="res://img/enemy/female_shooter/death/up/12.png" id="53_6khhu"]
+[ext_resource type="Texture2D" uid="uid://bdju561i44c7x" path="res://img/enemy/female_shooter/death/up/13.png" id="54_h3cbq"]
+[ext_resource type="Texture2D" uid="uid://cuekv4kop6c88" path="res://img/enemy/female_shooter/death/up/14.png" id="55_jbubn"]
+[ext_resource type="Texture2D" uid="uid://cie1ocb0f1ltm" path="res://img/enemy/female_shooter/death/up/15.png" id="56_6umm5"]
+[ext_resource type="Texture2D" uid="uid://cnp8skfgow7ja" path="res://img/enemy/female_shooter/death/up/16.png" id="57_q8haw"]
+[ext_resource type="Texture2D" uid="uid://51ouu2mobqu8" path="res://img/enemy/female_shooter/death/down/01.png" id="58_tnwtb"]
+[ext_resource type="Texture2D" uid="uid://bmsnaadr4bck7" path="res://img/enemy/female_shooter/death/down/02.png" id="59_q5op6"]
+[ext_resource type="Texture2D" uid="uid://byvhn1udr1tus" path="res://img/enemy/female_shooter/death/down/03.png" id="60_ul1ij"]
+[ext_resource type="Texture2D" uid="uid://dqht20yubhtbt" path="res://img/enemy/female_shooter/death/down/04.png" id="61_cxbgm"]
+[ext_resource type="Texture2D" uid="uid://b5iijd3oiesb6" path="res://img/enemy/female_shooter/death/down/05.png" id="62_r15v3"]
+[ext_resource type="Texture2D" uid="uid://d1vqltiryt6gh" path="res://img/enemy/female_shooter/death/down/06.png" id="63_r61cf"]
+[ext_resource type="Texture2D" uid="uid://bq665i45gdg87" path="res://img/enemy/female_shooter/death/down/07.png" id="64_3ff26"]
+[ext_resource type="Texture2D" uid="uid://clxf68ploltwl" path="res://img/enemy/female_shooter/death/down/08.png" id="65_t8ni6"]
+[ext_resource type="Texture2D" uid="uid://bujv06s6xll3l" path="res://img/enemy/female_shooter/death/down/09.png" id="66_25yyx"]
+[ext_resource type="Texture2D" uid="uid://b6ds51lue6t1o" path="res://img/enemy/female_shooter/death/down/10.png" id="67_eoatv"]
+[ext_resource type="Texture2D" uid="uid://bq0nrh0ldtsp5" path="res://img/enemy/female_shooter/death/down/11.png" id="68_ttlxt"]
+[ext_resource type="Texture2D" uid="uid://ctvhulbt8ke3d" path="res://img/enemy/female_shooter/death/down/12.png" id="69_xb3yi"]
+[ext_resource type="Texture2D" uid="uid://cfpmoypdx0ngd" path="res://img/enemy/female_shooter/death/down/13.png" id="70_3784p"]
+[ext_resource type="Texture2D" uid="uid://c5xi8h8gv2odb" path="res://img/enemy/female_shooter/death/down/14.png" id="71_tf5g5"]
+[ext_resource type="Texture2D" uid="uid://dpc46ptgv18uc" path="res://img/enemy/female_shooter/death/down/15.png" id="72_d5xut"]
+[ext_resource type="Texture2D" uid="uid://d1508vhwtpl83" path="res://img/enemy/female_shooter/death/down/16.png" id="73_vy1rf"]
+[ext_resource type="Texture2D" uid="uid://c6djv2evk4bsk" path="res://img/enemy/female_shooter/death/left/01.png" id="74_g30mv"]
+[ext_resource type="Texture2D" uid="uid://3ot6wvjq1c4b" path="res://img/enemy/female_shooter/death/left/02.png" id="75_u5wpx"]
+[ext_resource type="Texture2D" uid="uid://dv4baxy6xx6wf" path="res://img/enemy/female_shooter/death/left/03.png" id="76_a50gi"]
+[ext_resource type="Texture2D" uid="uid://cswydn24sqvv5" path="res://img/enemy/female_shooter/death/left/04.png" id="77_ou7m0"]
+[ext_resource type="Texture2D" uid="uid://bwlfte5utlnua" path="res://img/enemy/female_shooter/death/left/05.png" id="78_w8kr0"]
+[ext_resource type="Texture2D" uid="uid://d3f6yr6a4t7ly" path="res://img/enemy/female_shooter/death/left/06.png" id="79_c21sj"]
+[ext_resource type="Texture2D" uid="uid://dcthff60uqleh" path="res://img/enemy/female_shooter/death/left/07.png" id="80_bw2li"]
+[ext_resource type="Texture2D" uid="uid://cu0mexyxcm607" path="res://img/enemy/female_shooter/death/left/08.png" id="81_h78na"]
+[ext_resource type="Texture2D" uid="uid://j4qm7ih2aufc" path="res://img/enemy/female_shooter/death/left/09.png" id="82_d1cp2"]
+[ext_resource type="Texture2D" uid="uid://2q83wjaxol45" path="res://img/enemy/female_shooter/death/left/10.png" id="83_llenn"]
+[ext_resource type="Texture2D" uid="uid://c6gl20ghsd6tb" path="res://img/enemy/female_shooter/death/left/11.png" id="84_mycgn"]
+[ext_resource type="Texture2D" uid="uid://f0b67isw2o5g" path="res://img/enemy/female_shooter/death/left/12.png" id="85_o3112"]
+[ext_resource type="Texture2D" uid="uid://c1q8cs8ibh045" path="res://img/enemy/female_shooter/death/left/13.png" id="86_ytogr"]
+[ext_resource type="Texture2D" uid="uid://b4a2l4q8ghuu7" path="res://img/enemy/female_shooter/death/left/14.png" id="87_mtccv"]
+[ext_resource type="Texture2D" uid="uid://smuei4fmcalm" path="res://img/enemy/female_shooter/death/left/15.png" id="88_jrte4"]
+[ext_resource type="Texture2D" uid="uid://dly6bkxj8cie0" path="res://img/enemy/female_shooter/death/left/16.png" id="89_scj7d"]
+[ext_resource type="Texture2D" uid="uid://dc6mml8ctnsks" path="res://img/enemy/female_shooter/death/right/01.png" id="90_glpfb"]
+[ext_resource type="Texture2D" uid="uid://coav8e8wljfrw" path="res://img/enemy/female_shooter/death/right/02.png" id="91_udman"]
+[ext_resource type="Texture2D" uid="uid://dwcyx6g2fv3sg" path="res://img/enemy/female_shooter/death/right/03.png" id="92_fjme2"]
+[ext_resource type="Texture2D" uid="uid://2ocd5u0qetcn" path="res://img/enemy/female_shooter/death/right/04.png" id="93_neqnf"]
+[ext_resource type="Texture2D" uid="uid://crout8co48mjo" path="res://img/enemy/female_shooter/death/right/05.png" id="94_g8wrv"]
+[ext_resource type="Texture2D" uid="uid://dof4c35iiknh4" path="res://img/enemy/female_shooter/death/right/06.png" id="95_6ttp6"]
+[ext_resource type="Texture2D" uid="uid://8ss3mwrlou50" path="res://img/enemy/female_shooter/death/right/07.png" id="96_wai1y"]
+[ext_resource type="Texture2D" uid="uid://bt4nlg473aiod" path="res://img/enemy/female_shooter/death/right/08.png" id="97_2y6a4"]
+[ext_resource type="Texture2D" uid="uid://dl7iiaqy4j2o4" path="res://img/enemy/female_shooter/death/right/09.png" id="98_6rtgy"]
+[ext_resource type="Texture2D" uid="uid://bc4wk12iuuudp" path="res://img/enemy/female_shooter/death/right/10.png" id="99_qhdvk"]
+[ext_resource type="Texture2D" uid="uid://e7p32a8e2ete" path="res://img/enemy/female_shooter/death/right/11.png" id="100_swelh"]
+[ext_resource type="Texture2D" uid="uid://c2ulw6w72elia" path="res://img/enemy/female_shooter/death/right/12.png" id="101_en1lo"]
+[ext_resource type="Texture2D" uid="uid://b16k6f5iihaei" path="res://img/enemy/female_shooter/death/right/13.png" id="102_a3uyj"]
+[ext_resource type="Texture2D" uid="uid://b81dfuc822bm5" path="res://img/enemy/female_shooter/death/right/14.png" id="103_pvkw3"]
+[ext_resource type="Texture2D" uid="uid://bncn3phv7aavh" path="res://img/enemy/female_shooter/death/right/15.png" id="104_tkmwo"]
+[ext_resource type="Texture2D" uid="uid://dbhx10g5uxrcj" path="res://img/enemy/female_shooter/death/right/16.png" id="105_c8bh2"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b2c24"]
 load_path = "res://.godot/imported/01.png-58fdcf5b85cd2a4473a849f5fb3c839d.s3tc.ctex"
@@ -132,9 +196,8 @@ tracks/0/keys = {
 "values": [ExtResource("31_c4skd"), ExtResource("32_kj2qk"), ExtResource("33_8jf8k"), ExtResource("34_n2uia"), ExtResource("35_7vtph"), ExtResource("36_pdon1"), ExtResource("37_2ki36"), ExtResource("38_8x66u"), ExtResource("39_mwyat"), ExtResource("40_0rmvp")]
 }
 
-[sub_resource type="Animation" id="Animation_bh1id"]
-resource_name = "shoot_down"
-length = 0.0333367
+[sub_resource type="Animation" id="Animation_nk4ng"]
+resource_name = "death_up_1"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -142,15 +205,14 @@ tracks/0/path = NodePath("Sprite3D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8, 0.866667, 0.933333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("41_stlcv")]
+"values": [ExtResource("42_msicx"), ExtResource("43_oq0no"), ExtResource("44_qs4ol"), ExtResource("45_be7nb"), ExtResource("46_mlrrg"), ExtResource("47_pn7ow"), ExtResource("48_y0jm8"), ExtResource("49_og0sm"), ExtResource("50_38t5o"), ExtResource("51_0gnfs"), ExtResource("52_8v74h"), ExtResource("53_6khhu"), ExtResource("54_h3cbq"), ExtResource("55_jbubn"), ExtResource("56_6umm5"), ExtResource("57_q8haw")]
 }
 
-[sub_resource type="Animation" id="Animation_it23a"]
-resource_name = "shoot_up"
-length = 0.0333367
+[sub_resource type="Animation" id="Animation_vav6f"]
+resource_name = "death_down_1"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -158,21 +220,53 @@ tracks/0/path = NodePath("Sprite3D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8, 0.866667, 0.933333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("42_agsnd")]
+"values": [ExtResource("58_tnwtb"), ExtResource("59_q5op6"), ExtResource("60_ul1ij"), ExtResource("61_cxbgm"), ExtResource("62_r15v3"), ExtResource("63_r61cf"), ExtResource("64_3ff26"), ExtResource("65_t8ni6"), ExtResource("66_25yyx"), ExtResource("67_eoatv"), ExtResource("68_ttlxt"), ExtResource("69_xb3yi"), ExtResource("70_3784p"), ExtResource("71_tf5g5"), ExtResource("72_d5xut"), ExtResource("73_vy1rf")]
+}
+
+[sub_resource type="Animation" id="Animation_ljqny"]
+resource_name = "death_left_1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8, 0.866667, 0.933333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("74_g30mv"), ExtResource("75_u5wpx"), ExtResource("76_a50gi"), ExtResource("77_ou7m0"), ExtResource("78_w8kr0"), ExtResource("79_c21sj"), ExtResource("80_bw2li"), ExtResource("81_h78na"), ExtResource("82_d1cp2"), ExtResource("83_llenn"), ExtResource("84_mycgn"), ExtResource("85_o3112"), ExtResource("86_ytogr"), ExtResource("87_mtccv"), ExtResource("88_jrte4"), ExtResource("89_scj7d")]
+}
+
+[sub_resource type="Animation" id="Animation_nj6e5"]
+resource_name = "death_right_1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8, 0.866667, 0.933333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("90_glpfb"), ExtResource("91_udman"), ExtResource("92_fjme2"), ExtResource("93_neqnf"), ExtResource("94_g8wrv"), ExtResource("95_6ttp6"), ExtResource("96_wai1y"), ExtResource("97_2y6a4"), ExtResource("98_6rtgy"), ExtResource("99_qhdvk"), ExtResource("100_swelh"), ExtResource("101_en1lo"), ExtResource("102_a3uyj"), ExtResource("103_pvkw3"), ExtResource("104_tkmwo"), ExtResource("105_c8bh2")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_khpvp"]
 _data = {
 &"RESET": SubResource("Animation_ej1td"),
+&"death_down_1": SubResource("Animation_vav6f"),
+&"death_left_1": SubResource("Animation_ljqny"),
+&"death_right_1": SubResource("Animation_nj6e5"),
+&"death_up_1": SubResource("Animation_nk4ng"),
 &"run_down": SubResource("Animation_hjyvj"),
 &"run_left": SubResource("Animation_iaegy"),
 &"run_right": SubResource("Animation_16j2n"),
-&"run_up": SubResource("Animation_6i15b"),
-&"shoot_down": SubResource("Animation_bh1id"),
-&"shoot_up": SubResource("Animation_it23a")
+&"run_up": SubResource("Animation_6i15b")
 }
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_35pp1"]
@@ -180,10 +274,11 @@ radius = 0.210019
 height = 0.64629
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_gfdbk"]
-radius = 4.0
+radius = 6.0
 
 [node name="female_shooter" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+collision_layer = 8
 script = ExtResource("1_nk4ng")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
@@ -207,6 +302,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.14, 0)
 texture_filter = 0
 texture = ExtResource("43_04l70")
 
+[node name="body_down" type="Sprite3D" parent="."]
+billboard = 1
+texture_filter = 0
+texture = ExtResource("41_stlcv")
+
 [node name="arm_pivot_right" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14, 0)
 
@@ -214,6 +314,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.14, 0)
 texture_filter = 0
 texture = ExtResource("44_ooe40")
+
+[node name="body_up" type="Sprite3D" parent="."]
+billboard = 1
+texture_filter = 0
+texture = ExtResource("42_agsnd")
 
 [node name="range" type="Area3D" parent="."]
 
